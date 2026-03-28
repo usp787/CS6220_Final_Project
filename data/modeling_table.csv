@@ -1,0 +1,689 @@
+date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,condition,source
+2026-01-01,I001,Espresso,6,-3.6,-8.9,1.6,0.0,Cloudy,synthetic
+2026-01-02,I001,Espresso,3,-5.2,-10.1,-0.3,0.1,Clear,synthetic
+2026-01-03,I001,Espresso,9,-2.8,-7.2,1.6,0.0,Cloudy,synthetic
+2026-01-04,I001,Espresso,6,-0.1,-5.2,2.6,0.0,Cloudy,synthetic
+2026-01-05,I001,Espresso,1,-4.9,-9.8,-1.9,0.3,Cloudy,synthetic
+2026-01-06,I001,Espresso,6,-4.7,-7.7,0.5,0.0,Clear,synthetic
+2026-01-07,I001,Espresso,15,0.6,-4.6,4.9,8.4,Heavy Rain/Snow,synthetic
+2026-01-08,I001,Espresso,6,-1.5,-5.6,1.1,0.1,Clear,synthetic
+2026-01-09,I001,Espresso,1,-4.7,-9.6,-1.9,0.0,Clear,synthetic
+2026-01-10,I001,Espresso,11,-1.7,-6.9,2.8,0.0,Clear,synthetic
+2026-01-11,I001,Espresso,5,-4.3,-7.8,-1.8,0.6,Cloudy,synthetic
+2026-01-12,I001,Espresso,2,-4.1,-6.9,-1.1,0.0,Cloudy,synthetic
+2026-01-13,I001,Espresso,7,-1.9,-5.1,2.2,0.0,Clear,synthetic
+2026-01-14,I001,Espresso,3,-7.8,-11.5,-3.2,9.4,Heavy Rain/Snow,synthetic
+2026-01-15,I001,Espresso,1,-7.0,-12.0,-2.6,0.0,Cloudy,synthetic
+2026-01-16,I001,Espresso,10,-3.6,-8.7,-0.4,7.3,Light Rain/Snow,synthetic
+2026-01-17,I001,Espresso,6,-4.6,-7.2,0.0,1.5,Clear,synthetic
+2026-01-18,I001,Espresso,11,-0.7,-4.8,2.5,0.0,Cloudy,synthetic
+2026-01-19,I001,Espresso,8,-3.9,-7.7,-0.5,0.0,Clear,synthetic
+2026-01-20,I001,Espresso,7,-5.2,-8.3,-0.4,0.0,Cloudy,synthetic
+2026-01-21,I001,Espresso,15,3.1,0.2,7.6,0.0,Clear,synthetic
+2026-01-22,I001,Espresso,5,-1.4,-4.9,3.6,0.0,Clear,synthetic
+2026-01-23,I001,Espresso,10,-0.4,-5.7,4.1,0.0,Clear,synthetic
+2026-01-24,I001,Espresso,10,-4.4,-7.9,-0.2,0.0,Cloudy,synthetic
+2026-01-25,I001,Espresso,16,-1.7,-5.8,1.1,0.0,Clear,synthetic
+2026-01-26,I001,Espresso,11,0.3,-4.3,3.9,12.0,Heavy Rain/Snow,synthetic
+2026-01-27,I001,Espresso,7,-3.0,-6.6,0.3,0.0,Clear,synthetic
+2026-01-28,I001,Espresso,13,1.5,-4.0,4.7,2.5,Light Rain/Snow,synthetic
+2026-01-29,I001,Espresso,3,-1.1,-6.5,4.3,6.3,Light Rain/Snow,synthetic
+2026-01-30,I001,Espresso,13,-0.0,-3.3,3.7,0.0,Clear,synthetic
+2026-01-31,I001,Espresso,15,-0.7,-4.7,4.5,0.0,Clear,synthetic
+2026-02-01,I001,Espresso,21,6.4,3.0,10.8,0.0,Clear,synthetic
+2026-02-02,I001,Espresso,14,1.4,-2.0,6.2,0.0,Clear,synthetic
+2026-02-03,I001,Espresso,9,-1.4,-4.0,2.6,7.9,Light Rain/Snow,synthetic
+2026-02-04,I001,Espresso,16,4.1,-0.2,8.3,1.7,Light Rain/Snow,synthetic
+2026-02-05,I001,Espresso,8,-1.4,-5.4,2.6,10.2,Heavy Rain/Snow,synthetic
+2026-02-06,I001,Espresso,22,2.8,0.1,5.9,0.0,Clear,synthetic
+2026-02-07,I001,Espresso,3,-3.1,-6.4,1.6,0.0,Clear,synthetic
+2026-02-08,I001,Espresso,15,-1.1,-6.3,2.2,0.0,Clear,synthetic
+2026-02-09,I001,Espresso,17,3.4,0.1,5.9,0.4,Cloudy,synthetic
+2026-02-10,I001,Espresso,14,5.1,2.1,9.5,0.0,Cloudy,synthetic
+2026-02-11,I001,Espresso,16,3.7,-0.3,6.7,0.0,Clear,synthetic
+2026-02-12,I001,Espresso,19,3.1,-2.4,8.4,0.0,Clear,synthetic
+2026-02-13,I001,Espresso,16,2.8,-0.5,8.1,0.0,Clear,synthetic
+2026-02-14,I001,Espresso,17,-0.3,-4.9,4.9,0.0,Clear,synthetic
+2026-02-15,I001,Espresso,16,2.0,-2.8,5.6,2.7,Light Rain/Snow,synthetic
+2026-02-16,I001,Espresso,12,2.9,-0.3,5.5,0.0,Cloudy,synthetic
+2026-02-17,I001,Espresso,29,7.4,2.7,12.6,0.0,Cloudy,synthetic
+2026-02-18,I001,Espresso,15,5.6,2.0,9.3,5.0,Light Rain/Snow,synthetic
+2026-02-19,I001,Espresso,11,-0.1,-4.5,5.3,6.3,Light Rain/Snow,synthetic
+2026-02-20,I001,Espresso,17,5.9,1.5,11.3,7.1,Light Rain/Snow,synthetic
+2026-02-21,I001,Espresso,26,4.1,0.0,9.2,7.0,Light Rain/Snow,synthetic
+2026-02-22,I001,Espresso,27,3.5,0.7,6.9,0.0,Clear,synthetic
+2026-02-23,I001,Espresso,21,7.3,2.3,11.0,0.0,Cloudy,synthetic
+2026-02-24,I001,Espresso,19,8.7,5.2,13.7,0.0,Clear,synthetic
+2026-02-25,I001,Espresso,29,8.6,5.5,12.1,3.6,Light Rain/Snow,synthetic
+2026-02-26,I001,Espresso,14,3.9,1.2,6.9,0.0,Cloudy,synthetic
+2026-02-27,I001,Espresso,22,5.5,1.3,9.7,0.0,Clear,synthetic
+2026-02-28,I001,Espresso,31,7.5,3.0,12.8,1.9,Light Rain/Snow,synthetic
+2026-03-01,I001,Espresso,35,9.5,7.0,14.1,0.0,Clear,synthetic
+2026-03-02,I001,Espresso,20,5.7,1.6,9.9,0.0,Clear,synthetic
+2026-03-03,I001,Espresso,22,6.7,3.5,9.5,0.0,Clear,synthetic
+2026-03-04,I001,Espresso,24,4.3,-0.1,8.6,0.0,Cloudy,synthetic
+2026-03-05,I001,Espresso,23,4.3,1.2,9.7,0.5,Clear,synthetic
+2026-03-06,I001,Espresso,23,10.1,5.5,13.0,0.0,Clear,synthetic
+2026-03-07,I001,Espresso,41,11.8,8.1,15.9,0.0,Cloudy,synthetic
+2026-03-08,I001,Espresso,31,8.0,2.7,13.1,0.0,Clear,synthetic
+2026-03-09,I001,Espresso,25,11.2,8.3,15.9,0.0,Clear,synthetic
+2026-03-10,I001,Espresso,27,9.6,6.1,14.2,0.0,Clear,synthetic
+2026-03-11,I001,Espresso,34,7.0,4.2,11.6,0.4,Clear,synthetic
+2026-03-12,I001,Espresso,28,10.0,4.7,13.6,0.4,Clear,synthetic
+2026-03-13,I001,Espresso,28,13.5,8.4,16.9,0.0,Clear,synthetic
+2026-03-14,I001,Espresso,45,9.3,6.0,14.2,2.1,Light Rain/Snow,synthetic
+2026-03-15,I001,Espresso,38,14.0,9.5,18.9,0.0,Clear,synthetic
+2026-03-16,I001,Espresso,20,2.5,-2.5,7.6,0.0,Clear,synthetic
+2026-03-17,I001,Espresso,37,12.3,8.1,17.5,0.0,Cloudy,synthetic
+2026-03-18,I001,Espresso,29,10.4,6.4,14.5,0.0,Cloudy,synthetic
+2026-03-19,I001,Espresso,31,9.6,6.3,13.6,0.0,Cloudy,synthetic
+2026-03-20,I001,Espresso,31,10.9,8.1,15.8,0.0,Clear,synthetic
+2026-03-21,I001,Espresso,29,5.2,0.0,9.7,0.0,Clear,synthetic
+2026-03-22,I001,Espresso,37,10.4,5.2,15.0,0.0,Cloudy,synthetic
+2026-03-23,I001,Espresso,31,12.2,7.8,17.1,0.0,Clear,synthetic
+2026-03-24,I001,Espresso,31,15.5,12.0,20.7,0.0,Cloudy,synthetic
+2026-03-25,I001,Espresso,31,10.1,6.6,13.7,0.0,Clear,synthetic
+2026-03-26,I001,Espresso,32,9.5,4.9,13.2,0.5,Clear,synthetic
+2026-03-27,I001,Espresso,35,10.6,5.4,13.4,3.1,Light Rain/Snow,synthetic
+2026-01-01,I002,Latte,2,-3.6,-8.9,1.6,0.0,Cloudy,synthetic
+2026-01-02,I002,Latte,1,-5.2,-10.1,-0.3,0.1,Clear,synthetic
+2026-01-03,I002,Latte,5,-2.8,-7.2,1.6,0.0,Cloudy,synthetic
+2026-01-04,I002,Latte,10,-0.1,-5.2,2.6,0.0,Cloudy,synthetic
+2026-01-05,I002,Latte,3,-4.9,-9.8,-1.9,0.3,Cloudy,synthetic
+2026-01-06,I002,Latte,3,-4.7,-7.7,0.5,0.0,Clear,synthetic
+2026-01-07,I002,Latte,10,0.6,-4.6,4.9,8.4,Heavy Rain/Snow,synthetic
+2026-01-08,I002,Latte,6,-1.5,-5.6,1.1,0.1,Clear,synthetic
+2026-01-09,I002,Latte,2,-4.7,-9.6,-1.9,0.0,Clear,synthetic
+2026-01-10,I002,Latte,6,-1.7,-6.9,2.8,0.0,Clear,synthetic
+2026-01-11,I002,Latte,3,-4.3,-7.8,-1.8,0.6,Cloudy,synthetic
+2026-01-12,I002,Latte,1,-4.1,-6.9,-1.1,0.0,Cloudy,synthetic
+2026-01-13,I002,Latte,12,-1.9,-5.1,2.2,0.0,Clear,synthetic
+2026-01-14,I002,Latte,2,-7.8,-11.5,-3.2,9.4,Heavy Rain/Snow,synthetic
+2026-01-15,I002,Latte,1,-7.0,-12.0,-2.6,0.0,Cloudy,synthetic
+2026-01-16,I002,Latte,2,-3.6,-8.7,-0.4,7.3,Light Rain/Snow,synthetic
+2026-01-17,I002,Latte,1,-4.6,-7.2,0.0,1.5,Clear,synthetic
+2026-01-18,I002,Latte,13,-0.7,-4.8,2.5,0.0,Cloudy,synthetic
+2026-01-19,I002,Latte,3,-3.9,-7.7,-0.5,0.0,Clear,synthetic
+2026-01-20,I002,Latte,2,-5.2,-8.3,-0.4,0.0,Cloudy,synthetic
+2026-01-21,I002,Latte,21,3.1,0.2,7.6,0.0,Clear,synthetic
+2026-01-22,I002,Latte,10,-1.4,-4.9,3.6,0.0,Clear,synthetic
+2026-01-23,I002,Latte,8,-0.4,-5.7,4.1,0.0,Clear,synthetic
+2026-01-24,I002,Latte,1,-4.4,-7.9,-0.2,0.0,Cloudy,synthetic
+2026-01-25,I002,Latte,8,-1.7,-5.8,1.1,0.0,Clear,synthetic
+2026-01-26,I002,Latte,14,0.3,-4.3,3.9,12.0,Heavy Rain/Snow,synthetic
+2026-01-27,I002,Latte,2,-3.0,-6.6,0.3,0.0,Clear,synthetic
+2026-01-28,I002,Latte,14,1.5,-4.0,4.7,2.5,Light Rain/Snow,synthetic
+2026-01-29,I002,Latte,12,-1.1,-6.5,4.3,6.3,Light Rain/Snow,synthetic
+2026-01-30,I002,Latte,11,-0.0,-3.3,3.7,0.0,Clear,synthetic
+2026-01-31,I002,Latte,17,-0.7,-4.7,4.5,0.0,Clear,synthetic
+2026-02-01,I002,Latte,36,6.4,3.0,10.8,0.0,Clear,synthetic
+2026-02-02,I002,Latte,14,1.4,-2.0,6.2,0.0,Clear,synthetic
+2026-02-03,I002,Latte,9,-1.4,-4.0,2.6,7.9,Light Rain/Snow,synthetic
+2026-02-04,I002,Latte,23,4.1,-0.2,8.3,1.7,Light Rain/Snow,synthetic
+2026-02-05,I002,Latte,5,-1.4,-5.4,2.6,10.2,Heavy Rain/Snow,synthetic
+2026-02-06,I002,Latte,17,2.8,0.1,5.9,0.0,Clear,synthetic
+2026-02-07,I002,Latte,8,-3.1,-6.4,1.6,0.0,Clear,synthetic
+2026-02-08,I002,Latte,12,-1.1,-6.3,2.2,0.0,Clear,synthetic
+2026-02-09,I002,Latte,21,3.4,0.1,5.9,0.4,Cloudy,synthetic
+2026-02-10,I002,Latte,28,5.1,2.1,9.5,0.0,Cloudy,synthetic
+2026-02-11,I002,Latte,26,3.7,-0.3,6.7,0.0,Clear,synthetic
+2026-02-12,I002,Latte,23,3.1,-2.4,8.4,0.0,Clear,synthetic
+2026-02-13,I002,Latte,23,2.8,-0.5,8.1,0.0,Clear,synthetic
+2026-02-14,I002,Latte,21,-0.3,-4.9,4.9,0.0,Clear,synthetic
+2026-02-15,I002,Latte,32,2.0,-2.8,5.6,2.7,Light Rain/Snow,synthetic
+2026-02-16,I002,Latte,20,2.9,-0.3,5.5,0.0,Cloudy,synthetic
+2026-02-17,I002,Latte,39,7.4,2.7,12.6,0.0,Cloudy,synthetic
+2026-02-18,I002,Latte,30,5.6,2.0,9.3,5.0,Light Rain/Snow,synthetic
+2026-02-19,I002,Latte,15,-0.1,-4.5,5.3,6.3,Light Rain/Snow,synthetic
+2026-02-20,I002,Latte,30,5.9,1.5,11.3,7.1,Light Rain/Snow,synthetic
+2026-02-21,I002,Latte,32,4.1,0.0,9.2,7.0,Light Rain/Snow,synthetic
+2026-02-22,I002,Latte,35,3.5,0.7,6.9,0.0,Clear,synthetic
+2026-02-23,I002,Latte,29,7.3,2.3,11.0,0.0,Cloudy,synthetic
+2026-02-24,I002,Latte,40,8.7,5.2,13.7,0.0,Clear,synthetic
+2026-02-25,I002,Latte,43,8.6,5.5,12.1,3.6,Light Rain/Snow,synthetic
+2026-02-26,I002,Latte,22,3.9,1.2,6.9,0.0,Cloudy,synthetic
+2026-02-27,I002,Latte,38,5.5,1.3,9.7,0.0,Clear,synthetic
+2026-02-28,I002,Latte,51,7.5,3.0,12.8,1.9,Light Rain/Snow,synthetic
+2026-03-01,I002,Latte,53,9.5,7.0,14.1,0.0,Clear,synthetic
+2026-03-02,I002,Latte,28,5.7,1.6,9.9,0.0,Clear,synthetic
+2026-03-03,I002,Latte,39,6.7,3.5,9.5,0.0,Clear,synthetic
+2026-03-04,I002,Latte,20,4.3,-0.1,8.6,0.0,Cloudy,synthetic
+2026-03-05,I002,Latte,32,4.3,1.2,9.7,0.5,Clear,synthetic
+2026-03-06,I002,Latte,50,10.1,5.5,13.0,0.0,Clear,synthetic
+2026-03-07,I002,Latte,63,11.8,8.1,15.9,0.0,Cloudy,synthetic
+2026-03-08,I002,Latte,55,8.0,2.7,13.1,0.0,Clear,synthetic
+2026-03-09,I002,Latte,47,11.2,8.3,15.9,0.0,Clear,synthetic
+2026-03-10,I002,Latte,46,9.6,6.1,14.2,0.0,Clear,synthetic
+2026-03-11,I002,Latte,31,7.0,4.2,11.6,0.4,Clear,synthetic
+2026-03-12,I002,Latte,46,10.0,4.7,13.6,0.4,Clear,synthetic
+2026-03-13,I002,Latte,50,13.5,8.4,16.9,0.0,Clear,synthetic
+2026-03-14,I002,Latte,53,9.3,6.0,14.2,2.1,Light Rain/Snow,synthetic
+2026-03-15,I002,Latte,65,14.0,9.5,18.9,0.0,Clear,synthetic
+2026-03-16,I002,Latte,27,2.5,-2.5,7.6,0.0,Clear,synthetic
+2026-03-17,I002,Latte,50,12.3,8.1,17.5,0.0,Cloudy,synthetic
+2026-03-18,I002,Latte,46,10.4,6.4,14.5,0.0,Cloudy,synthetic
+2026-03-19,I002,Latte,42,9.6,6.3,13.6,0.0,Cloudy,synthetic
+2026-03-20,I002,Latte,46,10.9,8.1,15.8,0.0,Clear,synthetic
+2026-03-21,I002,Latte,41,5.2,0.0,9.7,0.0,Clear,synthetic
+2026-03-22,I002,Latte,69,10.4,5.2,15.0,0.0,Cloudy,synthetic
+2026-03-23,I002,Latte,52,12.2,7.8,17.1,0.0,Clear,synthetic
+2026-03-24,I002,Latte,60,15.5,12.0,20.7,0.0,Cloudy,synthetic
+2026-03-25,I002,Latte,46,10.1,6.6,13.7,0.0,Clear,synthetic
+2026-03-26,I002,Latte,44,9.5,4.9,13.2,0.5,Clear,synthetic
+2026-03-27,I002,Latte,50,10.6,5.4,13.4,3.1,Light Rain/Snow,synthetic
+2026-01-01,I003,Cappuccino,3,-3.6,-8.9,1.6,0.0,Cloudy,synthetic
+2026-01-02,I003,Cappuccino,3,-5.2,-10.1,-0.3,0.1,Clear,synthetic
+2026-01-03,I003,Cappuccino,9,-2.8,-7.2,1.6,0.0,Cloudy,synthetic
+2026-01-04,I003,Cappuccino,14,-0.1,-5.2,2.6,0.0,Cloudy,synthetic
+2026-01-05,I003,Cappuccino,2,-4.9,-9.8,-1.9,0.3,Cloudy,synthetic
+2026-01-06,I003,Cappuccino,2,-4.7,-7.7,0.5,0.0,Clear,synthetic
+2026-01-07,I003,Cappuccino,18,0.6,-4.6,4.9,8.4,Heavy Rain/Snow,synthetic
+2026-01-08,I003,Cappuccino,11,-1.5,-5.6,1.1,0.1,Clear,synthetic
+2026-01-09,I003,Cappuccino,1,-4.7,-9.6,-1.9,0.0,Clear,synthetic
+2026-01-10,I003,Cappuccino,14,-1.7,-6.9,2.8,0.0,Clear,synthetic
+2026-01-11,I003,Cappuccino,7,-4.3,-7.8,-1.8,0.6,Cloudy,synthetic
+2026-01-12,I003,Cappuccino,2,-4.1,-6.9,-1.1,0.0,Cloudy,synthetic
+2026-01-13,I003,Cappuccino,5,-1.9,-5.1,2.2,0.0,Clear,synthetic
+2026-01-14,I003,Cappuccino,2,-7.8,-11.5,-3.2,9.4,Heavy Rain/Snow,synthetic
+2026-01-15,I003,Cappuccino,1,-7.0,-12.0,-2.6,0.0,Cloudy,synthetic
+2026-01-16,I003,Cappuccino,5,-3.6,-8.7,-0.4,7.3,Light Rain/Snow,synthetic
+2026-01-17,I003,Cappuccino,5,-4.6,-7.2,0.0,1.5,Clear,synthetic
+2026-01-18,I003,Cappuccino,11,-0.7,-4.8,2.5,0.0,Cloudy,synthetic
+2026-01-19,I003,Cappuccino,6,-3.9,-7.7,-0.5,0.0,Clear,synthetic
+2026-01-20,I003,Cappuccino,3,-5.2,-8.3,-0.4,0.0,Cloudy,synthetic
+2026-01-21,I003,Cappuccino,12,3.1,0.2,7.6,0.0,Clear,synthetic
+2026-01-22,I003,Cappuccino,13,-1.4,-4.9,3.6,0.0,Clear,synthetic
+2026-01-23,I003,Cappuccino,11,-0.4,-5.7,4.1,0.0,Clear,synthetic
+2026-01-24,I003,Cappuccino,5,-4.4,-7.9,-0.2,0.0,Cloudy,synthetic
+2026-01-25,I003,Cappuccino,13,-1.7,-5.8,1.1,0.0,Clear,synthetic
+2026-01-26,I003,Cappuccino,8,0.3,-4.3,3.9,12.0,Heavy Rain/Snow,synthetic
+2026-01-27,I003,Cappuccino,4,-3.0,-6.6,0.3,0.0,Clear,synthetic
+2026-01-28,I003,Cappuccino,16,1.5,-4.0,4.7,2.5,Light Rain/Snow,synthetic
+2026-01-29,I003,Cappuccino,8,-1.1,-6.5,4.3,6.3,Light Rain/Snow,synthetic
+2026-01-30,I003,Cappuccino,9,-0.0,-3.3,3.7,0.0,Clear,synthetic
+2026-01-31,I003,Cappuccino,6,-0.7,-4.7,4.5,0.0,Clear,synthetic
+2026-02-01,I003,Cappuccino,29,6.4,3.0,10.8,0.0,Clear,synthetic
+2026-02-02,I003,Cappuccino,6,1.4,-2.0,6.2,0.0,Clear,synthetic
+2026-02-03,I003,Cappuccino,4,-1.4,-4.0,2.6,7.9,Light Rain/Snow,synthetic
+2026-02-04,I003,Cappuccino,18,4.1,-0.2,8.3,1.7,Light Rain/Snow,synthetic
+2026-02-05,I003,Cappuccino,10,-1.4,-5.4,2.6,10.2,Heavy Rain/Snow,synthetic
+2026-02-06,I003,Cappuccino,21,2.8,0.1,5.9,0.0,Clear,synthetic
+2026-02-07,I003,Cappuccino,13,-3.1,-6.4,1.6,0.0,Clear,synthetic
+2026-02-08,I003,Cappuccino,11,-1.1,-6.3,2.2,0.0,Clear,synthetic
+2026-02-09,I003,Cappuccino,13,3.4,0.1,5.9,0.4,Cloudy,synthetic
+2026-02-10,I003,Cappuccino,15,5.1,2.1,9.5,0.0,Cloudy,synthetic
+2026-02-11,I003,Cappuccino,18,3.7,-0.3,6.7,0.0,Clear,synthetic
+2026-02-12,I003,Cappuccino,17,3.1,-2.4,8.4,0.0,Clear,synthetic
+2026-02-13,I003,Cappuccino,11,2.8,-0.5,8.1,0.0,Clear,synthetic
+2026-02-14,I003,Cappuccino,16,-0.3,-4.9,4.9,0.0,Clear,synthetic
+2026-02-15,I003,Cappuccino,17,2.0,-2.8,5.6,2.7,Light Rain/Snow,synthetic
+2026-02-16,I003,Cappuccino,14,2.9,-0.3,5.5,0.0,Cloudy,synthetic
+2026-02-17,I003,Cappuccino,16,7.4,2.7,12.6,0.0,Cloudy,synthetic
+2026-02-18,I003,Cappuccino,14,5.6,2.0,9.3,5.0,Light Rain/Snow,synthetic
+2026-02-19,I003,Cappuccino,9,-0.1,-4.5,5.3,6.3,Light Rain/Snow,synthetic
+2026-02-20,I003,Cappuccino,14,5.9,1.5,11.3,7.1,Light Rain/Snow,synthetic
+2026-02-21,I003,Cappuccino,17,4.1,0.0,9.2,7.0,Light Rain/Snow,synthetic
+2026-02-22,I003,Cappuccino,25,3.5,0.7,6.9,0.0,Clear,synthetic
+2026-02-23,I003,Cappuccino,29,7.3,2.3,11.0,0.0,Cloudy,synthetic
+2026-02-24,I003,Cappuccino,16,8.7,5.2,13.7,0.0,Clear,synthetic
+2026-02-25,I003,Cappuccino,29,8.6,5.5,12.1,3.6,Light Rain/Snow,synthetic
+2026-02-26,I003,Cappuccino,18,3.9,1.2,6.9,0.0,Cloudy,synthetic
+2026-02-27,I003,Cappuccino,18,5.5,1.3,9.7,0.0,Clear,synthetic
+2026-02-28,I003,Cappuccino,33,7.5,3.0,12.8,1.9,Light Rain/Snow,synthetic
+2026-03-01,I003,Cappuccino,29,9.5,7.0,14.1,0.0,Clear,synthetic
+2026-03-02,I003,Cappuccino,22,5.7,1.6,9.9,0.0,Clear,synthetic
+2026-03-03,I003,Cappuccino,19,6.7,3.5,9.5,0.0,Clear,synthetic
+2026-03-04,I003,Cappuccino,15,4.3,-0.1,8.6,0.0,Cloudy,synthetic
+2026-03-05,I003,Cappuccino,15,4.3,1.2,9.7,0.5,Clear,synthetic
+2026-03-06,I003,Cappuccino,27,10.1,5.5,13.0,0.0,Clear,synthetic
+2026-03-07,I003,Cappuccino,38,11.8,8.1,15.9,0.0,Cloudy,synthetic
+2026-03-08,I003,Cappuccino,31,8.0,2.7,13.1,0.0,Clear,synthetic
+2026-03-09,I003,Cappuccino,32,11.2,8.3,15.9,0.0,Clear,synthetic
+2026-03-10,I003,Cappuccino,25,9.6,6.1,14.2,0.0,Clear,synthetic
+2026-03-11,I003,Cappuccino,18,7.0,4.2,11.6,0.4,Clear,synthetic
+2026-03-12,I003,Cappuccino,24,10.0,4.7,13.6,0.4,Clear,synthetic
+2026-03-13,I003,Cappuccino,33,13.5,8.4,16.9,0.0,Clear,synthetic
+2026-03-14,I003,Cappuccino,32,9.3,6.0,14.2,2.1,Light Rain/Snow,synthetic
+2026-03-15,I003,Cappuccino,42,14.0,9.5,18.9,0.0,Clear,synthetic
+2026-03-16,I003,Cappuccino,17,2.5,-2.5,7.6,0.0,Clear,synthetic
+2026-03-17,I003,Cappuccino,25,12.3,8.1,17.5,0.0,Cloudy,synthetic
+2026-03-18,I003,Cappuccino,29,10.4,6.4,14.5,0.0,Cloudy,synthetic
+2026-03-19,I003,Cappuccino,21,9.6,6.3,13.6,0.0,Cloudy,synthetic
+2026-03-20,I003,Cappuccino,23,10.9,8.1,15.8,0.0,Clear,synthetic
+2026-03-21,I003,Cappuccino,15,5.2,0.0,9.7,0.0,Clear,synthetic
+2026-03-22,I003,Cappuccino,37,10.4,5.2,15.0,0.0,Cloudy,synthetic
+2026-03-23,I003,Cappuccino,25,12.2,7.8,17.1,0.0,Clear,synthetic
+2026-03-24,I003,Cappuccino,36,15.5,12.0,20.7,0.0,Cloudy,synthetic
+2026-03-25,I003,Cappuccino,18,10.1,6.6,13.7,0.0,Clear,synthetic
+2026-03-26,I003,Cappuccino,26,9.5,4.9,13.2,0.5,Clear,synthetic
+2026-03-27,I003,Cappuccino,27,10.6,5.4,13.4,3.1,Light Rain/Snow,synthetic
+2026-01-01,I004,Americano,9,-3.6,-8.9,1.6,0.0,Cloudy,synthetic
+2026-01-02,I004,Americano,6,-5.2,-10.1,-0.3,0.1,Clear,synthetic
+2026-01-03,I004,Americano,13,-2.8,-7.2,1.6,0.0,Cloudy,synthetic
+2026-01-04,I004,Americano,13,-0.1,-5.2,2.6,0.0,Cloudy,synthetic
+2026-01-05,I004,Americano,6,-4.9,-9.8,-1.9,0.3,Cloudy,synthetic
+2026-01-06,I004,Americano,11,-4.7,-7.7,0.5,0.0,Clear,synthetic
+2026-01-07,I004,Americano,8,0.6,-4.6,4.9,8.4,Heavy Rain/Snow,synthetic
+2026-01-08,I004,Americano,11,-1.5,-5.6,1.1,0.1,Clear,synthetic
+2026-01-09,I004,Americano,19,-4.7,-9.6,-1.9,0.0,Clear,synthetic
+2026-01-10,I004,Americano,25,-1.7,-6.9,2.8,0.0,Clear,synthetic
+2026-01-11,I004,Americano,6,-4.3,-7.8,-1.8,0.6,Cloudy,synthetic
+2026-01-12,I004,Americano,3,-4.1,-6.9,-1.1,0.0,Cloudy,synthetic
+2026-01-13,I004,Americano,11,-1.9,-5.1,2.2,0.0,Clear,synthetic
+2026-01-14,I004,Americano,4,-7.8,-11.5,-3.2,9.4,Heavy Rain/Snow,synthetic
+2026-01-15,I004,Americano,10,-7.0,-12.0,-2.6,0.0,Cloudy,synthetic
+2026-01-16,I004,Americano,11,-3.6,-8.7,-0.4,7.3,Light Rain/Snow,synthetic
+2026-01-17,I004,Americano,10,-4.6,-7.2,0.0,1.5,Clear,synthetic
+2026-01-18,I004,Americano,16,-0.7,-4.8,2.5,0.0,Cloudy,synthetic
+2026-01-19,I004,Americano,6,-3.9,-7.7,-0.5,0.0,Clear,synthetic
+2026-01-20,I004,Americano,8,-5.2,-8.3,-0.4,0.0,Cloudy,synthetic
+2026-01-21,I004,Americano,15,3.1,0.2,7.6,0.0,Clear,synthetic
+2026-01-22,I004,Americano,9,-1.4,-4.9,3.6,0.0,Clear,synthetic
+2026-01-23,I004,Americano,14,-0.4,-5.7,4.1,0.0,Clear,synthetic
+2026-01-24,I004,Americano,10,-4.4,-7.9,-0.2,0.0,Cloudy,synthetic
+2026-01-25,I004,Americano,13,-1.7,-5.8,1.1,0.0,Clear,synthetic
+2026-01-26,I004,Americano,12,0.3,-4.3,3.9,12.0,Heavy Rain/Snow,synthetic
+2026-01-27,I004,Americano,14,-3.0,-6.6,0.3,0.0,Clear,synthetic
+2026-01-28,I004,Americano,12,1.5,-4.0,4.7,2.5,Light Rain/Snow,synthetic
+2026-01-29,I004,Americano,14,-1.1,-6.5,4.3,6.3,Light Rain/Snow,synthetic
+2026-01-30,I004,Americano,11,-0.0,-3.3,3.7,0.0,Clear,synthetic
+2026-01-31,I004,Americano,12,-0.7,-4.7,4.5,0.0,Clear,synthetic
+2026-02-01,I004,Americano,21,6.4,3.0,10.8,0.0,Clear,synthetic
+2026-02-02,I004,Americano,11,1.4,-2.0,6.2,0.0,Clear,synthetic
+2026-02-03,I004,Americano,8,-1.4,-4.0,2.6,7.9,Light Rain/Snow,synthetic
+2026-02-04,I004,Americano,18,4.1,-0.2,8.3,1.7,Light Rain/Snow,synthetic
+2026-02-05,I004,Americano,8,-1.4,-5.4,2.6,10.2,Heavy Rain/Snow,synthetic
+2026-02-06,I004,Americano,11,2.8,0.1,5.9,0.0,Clear,synthetic
+2026-02-07,I004,Americano,9,-3.1,-6.4,1.6,0.0,Clear,synthetic
+2026-02-08,I004,Americano,20,-1.1,-6.3,2.2,0.0,Clear,synthetic
+2026-02-09,I004,Americano,13,3.4,0.1,5.9,0.4,Cloudy,synthetic
+2026-02-10,I004,Americano,14,5.1,2.1,9.5,0.0,Cloudy,synthetic
+2026-02-11,I004,Americano,8,3.7,-0.3,6.7,0.0,Clear,synthetic
+2026-02-12,I004,Americano,7,3.1,-2.4,8.4,0.0,Clear,synthetic
+2026-02-13,I004,Americano,12,2.8,-0.5,8.1,0.0,Clear,synthetic
+2026-02-14,I004,Americano,6,-0.3,-4.9,4.9,0.0,Clear,synthetic
+2026-02-15,I004,Americano,14,2.0,-2.8,5.6,2.7,Light Rain/Snow,synthetic
+2026-02-16,I004,Americano,12,2.9,-0.3,5.5,0.0,Cloudy,synthetic
+2026-02-17,I004,Americano,18,7.4,2.7,12.6,0.0,Cloudy,synthetic
+2026-02-18,I004,Americano,18,5.6,2.0,9.3,5.0,Light Rain/Snow,synthetic
+2026-02-19,I004,Americano,12,-0.1,-4.5,5.3,6.3,Light Rain/Snow,synthetic
+2026-02-20,I004,Americano,13,5.9,1.5,11.3,7.1,Light Rain/Snow,synthetic
+2026-02-21,I004,Americano,17,4.1,0.0,9.2,7.0,Light Rain/Snow,synthetic
+2026-02-22,I004,Americano,20,3.5,0.7,6.9,0.0,Clear,synthetic
+2026-02-23,I004,Americano,14,7.3,2.3,11.0,0.0,Cloudy,synthetic
+2026-02-24,I004,Americano,17,8.7,5.2,13.7,0.0,Clear,synthetic
+2026-02-25,I004,Americano,18,8.6,5.5,12.1,3.6,Light Rain/Snow,synthetic
+2026-02-26,I004,Americano,14,3.9,1.2,6.9,0.0,Cloudy,synthetic
+2026-02-27,I004,Americano,16,5.5,1.3,9.7,0.0,Clear,synthetic
+2026-02-28,I004,Americano,21,7.5,3.0,12.8,1.9,Light Rain/Snow,synthetic
+2026-03-01,I004,Americano,21,9.5,7.0,14.1,0.0,Clear,synthetic
+2026-03-02,I004,Americano,22,5.7,1.6,9.9,0.0,Clear,synthetic
+2026-03-03,I004,Americano,19,6.7,3.5,9.5,0.0,Clear,synthetic
+2026-03-04,I004,Americano,19,4.3,-0.1,8.6,0.0,Cloudy,synthetic
+2026-03-05,I004,Americano,19,4.3,1.2,9.7,0.5,Clear,synthetic
+2026-03-06,I004,Americano,23,10.1,5.5,13.0,0.0,Clear,synthetic
+2026-03-07,I004,Americano,21,11.8,8.1,15.9,0.0,Cloudy,synthetic
+2026-03-08,I004,Americano,25,8.0,2.7,13.1,0.0,Clear,synthetic
+2026-03-09,I004,Americano,20,11.2,8.3,15.9,0.0,Clear,synthetic
+2026-03-10,I004,Americano,25,9.6,6.1,14.2,0.0,Clear,synthetic
+2026-03-11,I004,Americano,16,7.0,4.2,11.6,0.4,Clear,synthetic
+2026-03-12,I004,Americano,19,10.0,4.7,13.6,0.4,Clear,synthetic
+2026-03-13,I004,Americano,20,13.5,8.4,16.9,0.0,Clear,synthetic
+2026-03-14,I004,Americano,28,9.3,6.0,14.2,2.1,Light Rain/Snow,synthetic
+2026-03-15,I004,Americano,18,14.0,9.5,18.9,0.0,Clear,synthetic
+2026-03-16,I004,Americano,14,2.5,-2.5,7.6,0.0,Clear,synthetic
+2026-03-17,I004,Americano,17,12.3,8.1,17.5,0.0,Cloudy,synthetic
+2026-03-18,I004,Americano,10,10.4,6.4,14.5,0.0,Cloudy,synthetic
+2026-03-19,I004,Americano,19,9.6,6.3,13.6,0.0,Cloudy,synthetic
+2026-03-20,I004,Americano,18,10.9,8.1,15.8,0.0,Clear,synthetic
+2026-03-21,I004,Americano,26,5.2,0.0,9.7,0.0,Clear,synthetic
+2026-03-22,I004,Americano,26,10.4,5.2,15.0,0.0,Cloudy,synthetic
+2026-03-23,I004,Americano,14,12.2,7.8,17.1,0.0,Clear,synthetic
+2026-03-24,I004,Americano,23,15.5,12.0,20.7,0.0,Cloudy,synthetic
+2026-03-25,I004,Americano,17,10.1,6.6,13.7,0.0,Clear,synthetic
+2026-03-26,I004,Americano,16,9.5,4.9,13.2,0.5,Clear,synthetic
+2026-03-27,I004,Americano,16,10.6,5.4,13.4,3.1,Light Rain/Snow,synthetic
+2026-01-01,I005,Green Tea,11,-3.6,-8.9,1.6,0.0,Cloudy,synthetic
+2026-01-02,I005,Green Tea,11,-5.2,-10.1,-0.3,0.1,Clear,synthetic
+2026-01-03,I005,Green Tea,12,-2.8,-7.2,1.6,0.0,Cloudy,synthetic
+2026-01-04,I005,Green Tea,16,-0.1,-5.2,2.6,0.0,Cloudy,synthetic
+2026-01-05,I005,Green Tea,5,-4.9,-9.8,-1.9,0.3,Cloudy,synthetic
+2026-01-06,I005,Green Tea,6,-4.7,-7.7,0.5,0.0,Clear,synthetic
+2026-01-07,I005,Green Tea,5,0.6,-4.6,4.9,8.4,Heavy Rain/Snow,synthetic
+2026-01-08,I005,Green Tea,6,-1.5,-5.6,1.1,0.1,Clear,synthetic
+2026-01-09,I005,Green Tea,10,-4.7,-9.6,-1.9,0.0,Clear,synthetic
+2026-01-10,I005,Green Tea,16,-1.7,-6.9,2.8,0.0,Clear,synthetic
+2026-01-11,I005,Green Tea,6,-4.3,-7.8,-1.8,0.6,Cloudy,synthetic
+2026-01-12,I005,Green Tea,7,-4.1,-6.9,-1.1,0.0,Cloudy,synthetic
+2026-01-13,I005,Green Tea,11,-1.9,-5.1,2.2,0.0,Clear,synthetic
+2026-01-14,I005,Green Tea,4,-7.8,-11.5,-3.2,9.4,Heavy Rain/Snow,synthetic
+2026-01-15,I005,Green Tea,11,-7.0,-12.0,-2.6,0.0,Cloudy,synthetic
+2026-01-16,I005,Green Tea,8,-3.6,-8.7,-0.4,7.3,Light Rain/Snow,synthetic
+2026-01-17,I005,Green Tea,6,-4.6,-7.2,0.0,1.5,Clear,synthetic
+2026-01-18,I005,Green Tea,6,-0.7,-4.8,2.5,0.0,Cloudy,synthetic
+2026-01-19,I005,Green Tea,7,-3.9,-7.7,-0.5,0.0,Clear,synthetic
+2026-01-20,I005,Green Tea,4,-5.2,-8.3,-0.4,0.0,Cloudy,synthetic
+2026-01-21,I005,Green Tea,6,3.1,0.2,7.6,0.0,Clear,synthetic
+2026-01-22,I005,Green Tea,5,-1.4,-4.9,3.6,0.0,Clear,synthetic
+2026-01-23,I005,Green Tea,1,-0.4,-5.7,4.1,0.0,Clear,synthetic
+2026-01-24,I005,Green Tea,9,-4.4,-7.9,-0.2,0.0,Cloudy,synthetic
+2026-01-25,I005,Green Tea,11,-1.7,-5.8,1.1,0.0,Clear,synthetic
+2026-01-26,I005,Green Tea,12,0.3,-4.3,3.9,12.0,Heavy Rain/Snow,synthetic
+2026-01-27,I005,Green Tea,8,-3.0,-6.6,0.3,0.0,Clear,synthetic
+2026-01-28,I005,Green Tea,8,1.5,-4.0,4.7,2.5,Light Rain/Snow,synthetic
+2026-01-29,I005,Green Tea,12,-1.1,-6.5,4.3,6.3,Light Rain/Snow,synthetic
+2026-01-30,I005,Green Tea,7,-0.0,-3.3,3.7,0.0,Clear,synthetic
+2026-01-31,I005,Green Tea,15,-0.7,-4.7,4.5,0.0,Clear,synthetic
+2026-02-01,I005,Green Tea,21,6.4,3.0,10.8,0.0,Clear,synthetic
+2026-02-02,I005,Green Tea,6,1.4,-2.0,6.2,0.0,Clear,synthetic
+2026-02-03,I005,Green Tea,10,-1.4,-4.0,2.6,7.9,Light Rain/Snow,synthetic
+2026-02-04,I005,Green Tea,12,4.1,-0.2,8.3,1.7,Light Rain/Snow,synthetic
+2026-02-05,I005,Green Tea,12,-1.4,-5.4,2.6,10.2,Heavy Rain/Snow,synthetic
+2026-02-06,I005,Green Tea,13,2.8,0.1,5.9,0.0,Clear,synthetic
+2026-02-07,I005,Green Tea,9,-3.1,-6.4,1.6,0.0,Clear,synthetic
+2026-02-08,I005,Green Tea,10,-1.1,-6.3,2.2,0.0,Clear,synthetic
+2026-02-09,I005,Green Tea,8,3.4,0.1,5.9,0.4,Cloudy,synthetic
+2026-02-10,I005,Green Tea,7,5.1,2.1,9.5,0.0,Cloudy,synthetic
+2026-02-11,I005,Green Tea,7,3.7,-0.3,6.7,0.0,Clear,synthetic
+2026-02-12,I005,Green Tea,12,3.1,-2.4,8.4,0.0,Clear,synthetic
+2026-02-13,I005,Green Tea,14,2.8,-0.5,8.1,0.0,Clear,synthetic
+2026-02-14,I005,Green Tea,13,-0.3,-4.9,4.9,0.0,Clear,synthetic
+2026-02-15,I005,Green Tea,12,2.0,-2.8,5.6,2.7,Light Rain/Snow,synthetic
+2026-02-16,I005,Green Tea,9,2.9,-0.3,5.5,0.0,Cloudy,synthetic
+2026-02-17,I005,Green Tea,11,7.4,2.7,12.6,0.0,Cloudy,synthetic
+2026-02-18,I005,Green Tea,8,5.6,2.0,9.3,5.0,Light Rain/Snow,synthetic
+2026-02-19,I005,Green Tea,6,-0.1,-4.5,5.3,6.3,Light Rain/Snow,synthetic
+2026-02-20,I005,Green Tea,9,5.9,1.5,11.3,7.1,Light Rain/Snow,synthetic
+2026-02-21,I005,Green Tea,13,4.1,0.0,9.2,7.0,Light Rain/Snow,synthetic
+2026-02-22,I005,Green Tea,12,3.5,0.7,6.9,0.0,Clear,synthetic
+2026-02-23,I005,Green Tea,13,7.3,2.3,11.0,0.0,Cloudy,synthetic
+2026-02-24,I005,Green Tea,11,8.7,5.2,13.7,0.0,Clear,synthetic
+2026-02-25,I005,Green Tea,10,8.6,5.5,12.1,3.6,Light Rain/Snow,synthetic
+2026-02-26,I005,Green Tea,9,3.9,1.2,6.9,0.0,Cloudy,synthetic
+2026-02-27,I005,Green Tea,11,5.5,1.3,9.7,0.0,Clear,synthetic
+2026-02-28,I005,Green Tea,16,7.5,3.0,12.8,1.9,Light Rain/Snow,synthetic
+2026-03-01,I005,Green Tea,18,9.5,7.0,14.1,0.0,Clear,synthetic
+2026-03-02,I005,Green Tea,12,5.7,1.6,9.9,0.0,Clear,synthetic
+2026-03-03,I005,Green Tea,12,6.7,3.5,9.5,0.0,Clear,synthetic
+2026-03-04,I005,Green Tea,10,4.3,-0.1,8.6,0.0,Cloudy,synthetic
+2026-03-05,I005,Green Tea,14,4.3,1.2,9.7,0.5,Clear,synthetic
+2026-03-06,I005,Green Tea,8,10.1,5.5,13.0,0.0,Clear,synthetic
+2026-03-07,I005,Green Tea,15,11.8,8.1,15.9,0.0,Cloudy,synthetic
+2026-03-08,I005,Green Tea,15,8.0,2.7,13.1,0.0,Clear,synthetic
+2026-03-09,I005,Green Tea,15,11.2,8.3,15.9,0.0,Clear,synthetic
+2026-03-10,I005,Green Tea,14,9.6,6.1,14.2,0.0,Clear,synthetic
+2026-03-11,I005,Green Tea,10,7.0,4.2,11.6,0.4,Clear,synthetic
+2026-03-12,I005,Green Tea,10,10.0,4.7,13.6,0.4,Clear,synthetic
+2026-03-13,I005,Green Tea,18,13.5,8.4,16.9,0.0,Clear,synthetic
+2026-03-14,I005,Green Tea,11,9.3,6.0,14.2,2.1,Light Rain/Snow,synthetic
+2026-03-15,I005,Green Tea,13,14.0,9.5,18.9,0.0,Clear,synthetic
+2026-03-16,I005,Green Tea,11,2.5,-2.5,7.6,0.0,Clear,synthetic
+2026-03-17,I005,Green Tea,11,12.3,8.1,17.5,0.0,Cloudy,synthetic
+2026-03-18,I005,Green Tea,13,10.4,6.4,14.5,0.0,Cloudy,synthetic
+2026-03-19,I005,Green Tea,12,9.6,6.3,13.6,0.0,Cloudy,synthetic
+2026-03-20,I005,Green Tea,9,10.9,8.1,15.8,0.0,Clear,synthetic
+2026-03-21,I005,Green Tea,17,5.2,0.0,9.7,0.0,Clear,synthetic
+2026-03-22,I005,Green Tea,17,10.4,5.2,15.0,0.0,Cloudy,synthetic
+2026-03-23,I005,Green Tea,13,12.2,7.8,17.1,0.0,Clear,synthetic
+2026-03-24,I005,Green Tea,13,15.5,12.0,20.7,0.0,Cloudy,synthetic
+2026-03-25,I005,Green Tea,10,10.1,6.6,13.7,0.0,Clear,synthetic
+2026-03-26,I005,Green Tea,21,9.5,4.9,13.2,0.5,Clear,synthetic
+2026-03-27,I005,Green Tea,10,10.6,5.4,13.4,3.1,Light Rain/Snow,synthetic
+2026-01-01,I006,Muffin,7,-3.6,-8.9,1.6,0.0,Cloudy,synthetic
+2026-01-02,I006,Muffin,17,-5.2,-10.1,-0.3,0.1,Clear,synthetic
+2026-01-03,I006,Muffin,20,-2.8,-7.2,1.6,0.0,Cloudy,synthetic
+2026-01-04,I006,Muffin,15,-0.1,-5.2,2.6,0.0,Cloudy,synthetic
+2026-01-05,I006,Muffin,12,-4.9,-9.8,-1.9,0.3,Cloudy,synthetic
+2026-01-06,I006,Muffin,18,-4.7,-7.7,0.5,0.0,Clear,synthetic
+2026-01-07,I006,Muffin,9,0.6,-4.6,4.9,8.4,Heavy Rain/Snow,synthetic
+2026-01-08,I006,Muffin,12,-1.5,-5.6,1.1,0.1,Clear,synthetic
+2026-01-09,I006,Muffin,10,-4.7,-9.6,-1.9,0.0,Clear,synthetic
+2026-01-10,I006,Muffin,12,-1.7,-6.9,2.8,0.0,Clear,synthetic
+2026-01-11,I006,Muffin,19,-4.3,-7.8,-1.8,0.6,Cloudy,synthetic
+2026-01-12,I006,Muffin,10,-4.1,-6.9,-1.1,0.0,Cloudy,synthetic
+2026-01-13,I006,Muffin,11,-1.9,-5.1,2.2,0.0,Clear,synthetic
+2026-01-14,I006,Muffin,10,-7.8,-11.5,-3.2,9.4,Heavy Rain/Snow,synthetic
+2026-01-15,I006,Muffin,7,-7.0,-12.0,-2.6,0.0,Cloudy,synthetic
+2026-01-16,I006,Muffin,5,-3.6,-8.7,-0.4,7.3,Light Rain/Snow,synthetic
+2026-01-17,I006,Muffin,14,-4.6,-7.2,0.0,1.5,Clear,synthetic
+2026-01-18,I006,Muffin,15,-0.7,-4.8,2.5,0.0,Cloudy,synthetic
+2026-01-19,I006,Muffin,12,-3.9,-7.7,-0.5,0.0,Clear,synthetic
+2026-01-20,I006,Muffin,6,-5.2,-8.3,-0.4,0.0,Cloudy,synthetic
+2026-01-21,I006,Muffin,12,3.1,0.2,7.6,0.0,Clear,synthetic
+2026-01-22,I006,Muffin,9,-1.4,-4.9,3.6,0.0,Clear,synthetic
+2026-01-23,I006,Muffin,14,-0.4,-5.7,4.1,0.0,Clear,synthetic
+2026-01-24,I006,Muffin,13,-4.4,-7.9,-0.2,0.0,Cloudy,synthetic
+2026-01-25,I006,Muffin,11,-1.7,-5.8,1.1,0.0,Clear,synthetic
+2026-01-26,I006,Muffin,11,0.3,-4.3,3.9,12.0,Heavy Rain/Snow,synthetic
+2026-01-27,I006,Muffin,8,-3.0,-6.6,0.3,0.0,Clear,synthetic
+2026-01-28,I006,Muffin,12,1.5,-4.0,4.7,2.5,Light Rain/Snow,synthetic
+2026-01-29,I006,Muffin,11,-1.1,-6.5,4.3,6.3,Light Rain/Snow,synthetic
+2026-01-30,I006,Muffin,10,-0.0,-3.3,3.7,0.0,Clear,synthetic
+2026-01-31,I006,Muffin,11,-0.7,-4.7,4.5,0.0,Clear,synthetic
+2026-02-01,I006,Muffin,18,6.4,3.0,10.8,0.0,Clear,synthetic
+2026-02-02,I006,Muffin,15,1.4,-2.0,6.2,0.0,Clear,synthetic
+2026-02-03,I006,Muffin,11,-1.4,-4.0,2.6,7.9,Light Rain/Snow,synthetic
+2026-02-04,I006,Muffin,15,4.1,-0.2,8.3,1.7,Light Rain/Snow,synthetic
+2026-02-05,I006,Muffin,17,-1.4,-5.4,2.6,10.2,Heavy Rain/Snow,synthetic
+2026-02-06,I006,Muffin,16,2.8,0.1,5.9,0.0,Clear,synthetic
+2026-02-07,I006,Muffin,13,-3.1,-6.4,1.6,0.0,Clear,synthetic
+2026-02-08,I006,Muffin,15,-1.1,-6.3,2.2,0.0,Clear,synthetic
+2026-02-09,I006,Muffin,15,3.4,0.1,5.9,0.4,Cloudy,synthetic
+2026-02-10,I006,Muffin,13,5.1,2.1,9.5,0.0,Cloudy,synthetic
+2026-02-11,I006,Muffin,10,3.7,-0.3,6.7,0.0,Clear,synthetic
+2026-02-12,I006,Muffin,11,3.1,-2.4,8.4,0.0,Clear,synthetic
+2026-02-13,I006,Muffin,11,2.8,-0.5,8.1,0.0,Clear,synthetic
+2026-02-14,I006,Muffin,9,-0.3,-4.9,4.9,0.0,Clear,synthetic
+2026-02-15,I006,Muffin,17,2.0,-2.8,5.6,2.7,Light Rain/Snow,synthetic
+2026-02-16,I006,Muffin,12,2.9,-0.3,5.5,0.0,Cloudy,synthetic
+2026-02-17,I006,Muffin,9,7.4,2.7,12.6,0.0,Cloudy,synthetic
+2026-02-18,I006,Muffin,8,5.6,2.0,9.3,5.0,Light Rain/Snow,synthetic
+2026-02-19,I006,Muffin,12,-0.1,-4.5,5.3,6.3,Light Rain/Snow,synthetic
+2026-02-20,I006,Muffin,10,5.9,1.5,11.3,7.1,Light Rain/Snow,synthetic
+2026-02-21,I006,Muffin,13,4.1,0.0,9.2,7.0,Light Rain/Snow,synthetic
+2026-02-22,I006,Muffin,22,3.5,0.7,6.9,0.0,Clear,synthetic
+2026-02-23,I006,Muffin,7,7.3,2.3,11.0,0.0,Cloudy,synthetic
+2026-02-24,I006,Muffin,11,8.7,5.2,13.7,0.0,Clear,synthetic
+2026-02-25,I006,Muffin,15,8.6,5.5,12.1,3.6,Light Rain/Snow,synthetic
+2026-02-26,I006,Muffin,8,3.9,1.2,6.9,0.0,Cloudy,synthetic
+2026-02-27,I006,Muffin,14,5.5,1.3,9.7,0.0,Clear,synthetic
+2026-02-28,I006,Muffin,15,7.5,3.0,12.8,1.9,Light Rain/Snow,synthetic
+2026-03-01,I006,Muffin,20,9.5,7.0,14.1,0.0,Clear,synthetic
+2026-03-02,I006,Muffin,12,5.7,1.6,9.9,0.0,Clear,synthetic
+2026-03-03,I006,Muffin,14,6.7,3.5,9.5,0.0,Clear,synthetic
+2026-03-04,I006,Muffin,20,4.3,-0.1,8.6,0.0,Cloudy,synthetic
+2026-03-05,I006,Muffin,10,4.3,1.2,9.7,0.5,Clear,synthetic
+2026-03-06,I006,Muffin,13,10.1,5.5,13.0,0.0,Clear,synthetic
+2026-03-07,I006,Muffin,13,11.8,8.1,15.9,0.0,Cloudy,synthetic
+2026-03-08,I006,Muffin,17,8.0,2.7,13.1,0.0,Clear,synthetic
+2026-03-09,I006,Muffin,10,11.2,8.3,15.9,0.0,Clear,synthetic
+2026-03-10,I006,Muffin,11,9.6,6.1,14.2,0.0,Clear,synthetic
+2026-03-11,I006,Muffin,14,7.0,4.2,11.6,0.4,Clear,synthetic
+2026-03-12,I006,Muffin,11,10.0,4.7,13.6,0.4,Clear,synthetic
+2026-03-13,I006,Muffin,11,13.5,8.4,16.9,0.0,Clear,synthetic
+2026-03-14,I006,Muffin,13,9.3,6.0,14.2,2.1,Light Rain/Snow,synthetic
+2026-03-15,I006,Muffin,21,14.0,9.5,18.9,0.0,Clear,synthetic
+2026-03-16,I006,Muffin,13,2.5,-2.5,7.6,0.0,Clear,synthetic
+2026-03-17,I006,Muffin,12,12.3,8.1,17.5,0.0,Cloudy,synthetic
+2026-03-18,I006,Muffin,9,10.4,6.4,14.5,0.0,Cloudy,synthetic
+2026-03-19,I006,Muffin,9,9.6,6.3,13.6,0.0,Cloudy,synthetic
+2026-03-20,I006,Muffin,11,10.9,8.1,15.8,0.0,Clear,synthetic
+2026-03-21,I006,Muffin,16,5.2,0.0,9.7,0.0,Clear,synthetic
+2026-03-22,I006,Muffin,14,10.4,5.2,15.0,0.0,Cloudy,synthetic
+2026-03-23,I006,Muffin,9,12.2,7.8,17.1,0.0,Clear,synthetic
+2026-03-24,I006,Muffin,13,15.5,12.0,20.7,0.0,Cloudy,synthetic
+2026-03-25,I006,Muffin,18,10.1,6.6,13.7,0.0,Clear,synthetic
+2026-03-26,I006,Muffin,10,9.5,4.9,13.2,0.5,Clear,synthetic
+2026-03-27,I006,Muffin,13,10.6,5.4,13.4,3.1,Light Rain/Snow,synthetic
+2026-01-01,I007,Croissant,13,-3.6,-8.9,1.6,0.0,Cloudy,synthetic
+2026-01-02,I007,Croissant,16,-5.2,-10.1,-0.3,0.1,Clear,synthetic
+2026-01-03,I007,Croissant,24,-2.8,-7.2,1.6,0.0,Cloudy,synthetic
+2026-01-04,I007,Croissant,23,-0.1,-5.2,2.6,0.0,Cloudy,synthetic
+2026-01-05,I007,Croissant,16,-4.9,-9.8,-1.9,0.3,Cloudy,synthetic
+2026-01-06,I007,Croissant,12,-4.7,-7.7,0.5,0.0,Clear,synthetic
+2026-01-07,I007,Croissant,13,0.6,-4.6,4.9,8.4,Heavy Rain/Snow,synthetic
+2026-01-08,I007,Croissant,12,-1.5,-5.6,1.1,0.1,Clear,synthetic
+2026-01-09,I007,Croissant,13,-4.7,-9.6,-1.9,0.0,Clear,synthetic
+2026-01-10,I007,Croissant,17,-1.7,-6.9,2.8,0.0,Clear,synthetic
+2026-01-11,I007,Croissant,15,-4.3,-7.8,-1.8,0.6,Cloudy,synthetic
+2026-01-12,I007,Croissant,10,-4.1,-6.9,-1.1,0.0,Cloudy,synthetic
+2026-01-13,I007,Croissant,14,-1.9,-5.1,2.2,0.0,Clear,synthetic
+2026-01-14,I007,Croissant,16,-7.8,-11.5,-3.2,9.4,Heavy Rain/Snow,synthetic
+2026-01-15,I007,Croissant,12,-7.0,-12.0,-2.6,0.0,Cloudy,synthetic
+2026-01-16,I007,Croissant,12,-3.6,-8.7,-0.4,7.3,Light Rain/Snow,synthetic
+2026-01-17,I007,Croissant,15,-4.6,-7.2,0.0,1.5,Clear,synthetic
+2026-01-18,I007,Croissant,13,-0.7,-4.8,2.5,0.0,Cloudy,synthetic
+2026-01-19,I007,Croissant,13,-3.9,-7.7,-0.5,0.0,Clear,synthetic
+2026-01-20,I007,Croissant,12,-5.2,-8.3,-0.4,0.0,Cloudy,synthetic
+2026-01-21,I007,Croissant,12,3.1,0.2,7.6,0.0,Clear,synthetic
+2026-01-22,I007,Croissant,14,-1.4,-4.9,3.6,0.0,Clear,synthetic
+2026-01-23,I007,Croissant,13,-0.4,-5.7,4.1,0.0,Clear,synthetic
+2026-01-24,I007,Croissant,20,-4.4,-7.9,-0.2,0.0,Cloudy,synthetic
+2026-01-25,I007,Croissant,14,-1.7,-5.8,1.1,0.0,Clear,synthetic
+2026-01-26,I007,Croissant,13,0.3,-4.3,3.9,12.0,Heavy Rain/Snow,synthetic
+2026-01-27,I007,Croissant,16,-3.0,-6.6,0.3,0.0,Clear,synthetic
+2026-01-28,I007,Croissant,13,1.5,-4.0,4.7,2.5,Light Rain/Snow,synthetic
+2026-01-29,I007,Croissant,10,-1.1,-6.5,4.3,6.3,Light Rain/Snow,synthetic
+2026-01-30,I007,Croissant,15,-0.0,-3.3,3.7,0.0,Clear,synthetic
+2026-01-31,I007,Croissant,17,-0.7,-4.7,4.5,0.0,Clear,synthetic
+2026-02-01,I007,Croissant,19,6.4,3.0,10.8,0.0,Clear,synthetic
+2026-02-02,I007,Croissant,21,1.4,-2.0,6.2,0.0,Clear,synthetic
+2026-02-03,I007,Croissant,18,-1.4,-4.0,2.6,7.9,Light Rain/Snow,synthetic
+2026-02-04,I007,Croissant,12,4.1,-0.2,8.3,1.7,Light Rain/Snow,synthetic
+2026-02-05,I007,Croissant,15,-1.4,-5.4,2.6,10.2,Heavy Rain/Snow,synthetic
+2026-02-06,I007,Croissant,15,2.8,0.1,5.9,0.0,Clear,synthetic
+2026-02-07,I007,Croissant,15,-3.1,-6.4,1.6,0.0,Clear,synthetic
+2026-02-08,I007,Croissant,15,-1.1,-6.3,2.2,0.0,Clear,synthetic
+2026-02-09,I007,Croissant,17,3.4,0.1,5.9,0.4,Cloudy,synthetic
+2026-02-10,I007,Croissant,10,5.1,2.1,9.5,0.0,Cloudy,synthetic
+2026-02-11,I007,Croissant,10,3.7,-0.3,6.7,0.0,Clear,synthetic
+2026-02-12,I007,Croissant,13,3.1,-2.4,8.4,0.0,Clear,synthetic
+2026-02-13,I007,Croissant,13,2.8,-0.5,8.1,0.0,Clear,synthetic
+2026-02-14,I007,Croissant,23,-0.3,-4.9,4.9,0.0,Clear,synthetic
+2026-02-15,I007,Croissant,22,2.0,-2.8,5.6,2.7,Light Rain/Snow,synthetic
+2026-02-16,I007,Croissant,13,2.9,-0.3,5.5,0.0,Cloudy,synthetic
+2026-02-17,I007,Croissant,14,7.4,2.7,12.6,0.0,Cloudy,synthetic
+2026-02-18,I007,Croissant,16,5.6,2.0,9.3,5.0,Light Rain/Snow,synthetic
+2026-02-19,I007,Croissant,18,-0.1,-4.5,5.3,6.3,Light Rain/Snow,synthetic
+2026-02-20,I007,Croissant,10,5.9,1.5,11.3,7.1,Light Rain/Snow,synthetic
+2026-02-21,I007,Croissant,23,4.1,0.0,9.2,7.0,Light Rain/Snow,synthetic
+2026-02-22,I007,Croissant,19,3.5,0.7,6.9,0.0,Clear,synthetic
+2026-02-23,I007,Croissant,16,7.3,2.3,11.0,0.0,Cloudy,synthetic
+2026-02-24,I007,Croissant,16,8.7,5.2,13.7,0.0,Clear,synthetic
+2026-02-25,I007,Croissant,14,8.6,5.5,12.1,3.6,Light Rain/Snow,synthetic
+2026-02-26,I007,Croissant,16,3.9,1.2,6.9,0.0,Cloudy,synthetic
+2026-02-27,I007,Croissant,13,5.5,1.3,9.7,0.0,Clear,synthetic
+2026-02-28,I007,Croissant,19,7.5,3.0,12.8,1.9,Light Rain/Snow,synthetic
+2026-03-01,I007,Croissant,24,9.5,7.0,14.1,0.0,Clear,synthetic
+2026-03-02,I007,Croissant,10,5.7,1.6,9.9,0.0,Clear,synthetic
+2026-03-03,I007,Croissant,15,6.7,3.5,9.5,0.0,Clear,synthetic
+2026-03-04,I007,Croissant,17,4.3,-0.1,8.6,0.0,Cloudy,synthetic
+2026-03-05,I007,Croissant,17,4.3,1.2,9.7,0.5,Clear,synthetic
+2026-03-06,I007,Croissant,13,10.1,5.5,13.0,0.0,Clear,synthetic
+2026-03-07,I007,Croissant,22,11.8,8.1,15.9,0.0,Cloudy,synthetic
+2026-03-08,I007,Croissant,24,8.0,2.7,13.1,0.0,Clear,synthetic
+2026-03-09,I007,Croissant,15,11.2,8.3,15.9,0.0,Clear,synthetic
+2026-03-10,I007,Croissant,12,9.6,6.1,14.2,0.0,Clear,synthetic
+2026-03-11,I007,Croissant,13,7.0,4.2,11.6,0.4,Clear,synthetic
+2026-03-12,I007,Croissant,16,10.0,4.7,13.6,0.4,Clear,synthetic
+2026-03-13,I007,Croissant,19,13.5,8.4,16.9,0.0,Clear,synthetic
+2026-03-14,I007,Croissant,17,9.3,6.0,14.2,2.1,Light Rain/Snow,synthetic
+2026-03-15,I007,Croissant,20,14.0,9.5,18.9,0.0,Clear,synthetic
+2026-03-16,I007,Croissant,21,2.5,-2.5,7.6,0.0,Clear,synthetic
+2026-03-17,I007,Croissant,15,12.3,8.1,17.5,0.0,Cloudy,synthetic
+2026-03-18,I007,Croissant,13,10.4,6.4,14.5,0.0,Cloudy,synthetic
+2026-03-19,I007,Croissant,16,9.6,6.3,13.6,0.0,Cloudy,synthetic
+2026-03-20,I007,Croissant,16,10.9,8.1,15.8,0.0,Clear,synthetic
+2026-03-21,I007,Croissant,17,5.2,0.0,9.7,0.0,Clear,synthetic
+2026-03-22,I007,Croissant,21,10.4,5.2,15.0,0.0,Cloudy,synthetic
+2026-03-23,I007,Croissant,14,12.2,7.8,17.1,0.0,Clear,synthetic
+2026-03-24,I007,Croissant,13,15.5,12.0,20.7,0.0,Cloudy,synthetic
+2026-03-25,I007,Croissant,14,10.1,6.6,13.7,0.0,Clear,synthetic
+2026-03-26,I007,Croissant,10,9.5,4.9,13.2,0.5,Clear,synthetic
+2026-03-27,I007,Croissant,21,10.6,5.4,13.4,3.1,Light Rain/Snow,synthetic
+2026-01-01,I008,Sandwich,16,-3.6,-8.9,1.6,0.0,Cloudy,synthetic
+2026-01-02,I008,Sandwich,23,-5.2,-10.1,-0.3,0.1,Clear,synthetic
+2026-01-03,I008,Sandwich,27,-2.8,-7.2,1.6,0.0,Cloudy,synthetic
+2026-01-04,I008,Sandwich,24,-0.1,-5.2,2.6,0.0,Cloudy,synthetic
+2026-01-05,I008,Sandwich,23,-4.9,-9.8,-1.9,0.3,Cloudy,synthetic
+2026-01-06,I008,Sandwich,20,-4.7,-7.7,0.5,0.0,Clear,synthetic
+2026-01-07,I008,Sandwich,14,0.6,-4.6,4.9,8.4,Heavy Rain/Snow,synthetic
+2026-01-08,I008,Sandwich,18,-1.5,-5.6,1.1,0.1,Clear,synthetic
+2026-01-09,I008,Sandwich,25,-4.7,-9.6,-1.9,0.0,Clear,synthetic
+2026-01-10,I008,Sandwich,24,-1.7,-6.9,2.8,0.0,Clear,synthetic
+2026-01-11,I008,Sandwich,27,-4.3,-7.8,-1.8,0.6,Cloudy,synthetic
+2026-01-12,I008,Sandwich,29,-4.1,-6.9,-1.1,0.0,Cloudy,synthetic
+2026-01-13,I008,Sandwich,11,-1.9,-5.1,2.2,0.0,Clear,synthetic
+2026-01-14,I008,Sandwich,25,-7.8,-11.5,-3.2,9.4,Heavy Rain/Snow,synthetic
+2026-01-15,I008,Sandwich,24,-7.0,-12.0,-2.6,0.0,Cloudy,synthetic
+2026-01-16,I008,Sandwich,22,-3.6,-8.7,-0.4,7.3,Light Rain/Snow,synthetic
+2026-01-17,I008,Sandwich,34,-4.6,-7.2,0.0,1.5,Clear,synthetic
+2026-01-18,I008,Sandwich,23,-0.7,-4.8,2.5,0.0,Cloudy,synthetic
+2026-01-19,I008,Sandwich,23,-3.9,-7.7,-0.5,0.0,Clear,synthetic
+2026-01-20,I008,Sandwich,22,-5.2,-8.3,-0.4,0.0,Cloudy,synthetic
+2026-01-21,I008,Sandwich,21,3.1,0.2,7.6,0.0,Clear,synthetic
+2026-01-22,I008,Sandwich,21,-1.4,-4.9,3.6,0.0,Clear,synthetic
+2026-01-23,I008,Sandwich,18,-0.4,-5.7,4.1,0.0,Clear,synthetic
+2026-01-24,I008,Sandwich,33,-4.4,-7.9,-0.2,0.0,Cloudy,synthetic
+2026-01-25,I008,Sandwich,16,-1.7,-5.8,1.1,0.0,Clear,synthetic
+2026-01-26,I008,Sandwich,19,0.3,-4.3,3.9,12.0,Heavy Rain/Snow,synthetic
+2026-01-27,I008,Sandwich,21,-3.0,-6.6,0.3,0.0,Clear,synthetic
+2026-01-28,I008,Sandwich,15,1.5,-4.0,4.7,2.5,Light Rain/Snow,synthetic
+2026-01-29,I008,Sandwich,23,-1.1,-6.5,4.3,6.3,Light Rain/Snow,synthetic
+2026-01-30,I008,Sandwich,14,-0.0,-3.3,3.7,0.0,Clear,synthetic
+2026-01-31,I008,Sandwich,25,-0.7,-4.7,4.5,0.0,Clear,synthetic
+2026-02-01,I008,Sandwich,20,6.4,3.0,10.8,0.0,Clear,synthetic
+2026-02-02,I008,Sandwich,20,1.4,-2.0,6.2,0.0,Clear,synthetic
+2026-02-03,I008,Sandwich,17,-1.4,-4.0,2.6,7.9,Light Rain/Snow,synthetic
+2026-02-04,I008,Sandwich,19,4.1,-0.2,8.3,1.7,Light Rain/Snow,synthetic
+2026-02-05,I008,Sandwich,19,-1.4,-5.4,2.6,10.2,Heavy Rain/Snow,synthetic
+2026-02-06,I008,Sandwich,17,2.8,0.1,5.9,0.0,Clear,synthetic
+2026-02-07,I008,Sandwich,28,-3.1,-6.4,1.6,0.0,Clear,synthetic
+2026-02-08,I008,Sandwich,25,-1.1,-6.3,2.2,0.0,Clear,synthetic
+2026-02-09,I008,Sandwich,22,3.4,0.1,5.9,0.4,Cloudy,synthetic
+2026-02-10,I008,Sandwich,25,5.1,2.1,9.5,0.0,Cloudy,synthetic
+2026-02-11,I008,Sandwich,28,3.7,-0.3,6.7,0.0,Clear,synthetic
+2026-02-12,I008,Sandwich,18,3.1,-2.4,8.4,0.0,Clear,synthetic
+2026-02-13,I008,Sandwich,22,2.8,-0.5,8.1,0.0,Clear,synthetic
+2026-02-14,I008,Sandwich,28,-0.3,-4.9,4.9,0.0,Clear,synthetic
+2026-02-15,I008,Sandwich,26,2.0,-2.8,5.6,2.7,Light Rain/Snow,synthetic
+2026-02-16,I008,Sandwich,12,2.9,-0.3,5.5,0.0,Cloudy,synthetic
+2026-02-17,I008,Sandwich,12,7.4,2.7,12.6,0.0,Cloudy,synthetic
+2026-02-18,I008,Sandwich,18,5.6,2.0,9.3,5.0,Light Rain/Snow,synthetic
+2026-02-19,I008,Sandwich,19,-0.1,-4.5,5.3,6.3,Light Rain/Snow,synthetic
+2026-02-20,I008,Sandwich,23,5.9,1.5,11.3,7.1,Light Rain/Snow,synthetic
+2026-02-21,I008,Sandwich,27,4.1,0.0,9.2,7.0,Light Rain/Snow,synthetic
+2026-02-22,I008,Sandwich,22,3.5,0.7,6.9,0.0,Clear,synthetic
+2026-02-23,I008,Sandwich,17,7.3,2.3,11.0,0.0,Cloudy,synthetic
+2026-02-24,I008,Sandwich,15,8.7,5.2,13.7,0.0,Clear,synthetic
+2026-02-25,I008,Sandwich,22,8.6,5.5,12.1,3.6,Light Rain/Snow,synthetic
+2026-02-26,I008,Sandwich,12,3.9,1.2,6.9,0.0,Cloudy,synthetic
+2026-02-27,I008,Sandwich,14,5.5,1.3,9.7,0.0,Clear,synthetic
+2026-02-28,I008,Sandwich,21,7.5,3.0,12.8,1.9,Light Rain/Snow,synthetic
+2026-03-01,I008,Sandwich,22,9.5,7.0,14.1,0.0,Clear,synthetic
+2026-03-02,I008,Sandwich,18,5.7,1.6,9.9,0.0,Clear,synthetic
+2026-03-03,I008,Sandwich,17,6.7,3.5,9.5,0.0,Clear,synthetic
+2026-03-04,I008,Sandwich,13,4.3,-0.1,8.6,0.0,Cloudy,synthetic
+2026-03-05,I008,Sandwich,16,4.3,1.2,9.7,0.5,Clear,synthetic
+2026-03-06,I008,Sandwich,16,10.1,5.5,13.0,0.0,Clear,synthetic
+2026-03-07,I008,Sandwich,17,11.8,8.1,15.9,0.0,Cloudy,synthetic
+2026-03-08,I008,Sandwich,24,8.0,2.7,13.1,0.0,Clear,synthetic
+2026-03-09,I008,Sandwich,13,11.2,8.3,15.9,0.0,Clear,synthetic
+2026-03-10,I008,Sandwich,17,9.6,6.1,14.2,0.0,Clear,synthetic
+2026-03-11,I008,Sandwich,10,7.0,4.2,11.6,0.4,Clear,synthetic
+2026-03-12,I008,Sandwich,17,10.0,4.7,13.6,0.4,Clear,synthetic
+2026-03-13,I008,Sandwich,10,13.5,8.4,16.9,0.0,Clear,synthetic
+2026-03-14,I008,Sandwich,20,9.3,6.0,14.2,2.1,Light Rain/Snow,synthetic
+2026-03-15,I008,Sandwich,21,14.0,9.5,18.9,0.0,Clear,synthetic
+2026-03-16,I008,Sandwich,25,2.5,-2.5,7.6,0.0,Clear,synthetic
+2026-03-17,I008,Sandwich,9,12.3,8.1,17.5,0.0,Cloudy,synthetic
+2026-03-18,I008,Sandwich,18,10.4,6.4,14.5,0.0,Cloudy,synthetic
+2026-03-19,I008,Sandwich,17,9.6,6.3,13.6,0.0,Cloudy,synthetic
+2026-03-20,I008,Sandwich,11,10.9,8.1,15.8,0.0,Clear,synthetic
+2026-03-21,I008,Sandwich,30,5.2,0.0,9.7,0.0,Clear,synthetic
+2026-03-22,I008,Sandwich,16,10.4,5.2,15.0,0.0,Cloudy,synthetic
+2026-03-23,I008,Sandwich,12,12.2,7.8,17.1,0.0,Clear,synthetic
+2026-03-24,I008,Sandwich,11,15.5,12.0,20.7,0.0,Cloudy,synthetic
+2026-03-25,I008,Sandwich,8,10.1,6.6,13.7,0.0,Clear,synthetic
+2026-03-26,I008,Sandwich,22,9.5,4.9,13.2,0.5,Clear,synthetic
+2026-03-27,I008,Sandwich,18,10.6,5.4,13.4,3.1,Light Rain/Snow,synthetic

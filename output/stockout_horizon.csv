@@ -1,0 +1,9 @@
+item_name,current_stock,days_until_stockout
+Sandwich,106,5
+Americano,87,7
+Croissant,131,8
+Espresso,246,11
+Muffin,143,11
+Latte,296,11
+Cappuccino,258,>14
+Green Tea,156,>14
