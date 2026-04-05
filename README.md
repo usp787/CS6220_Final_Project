@@ -110,3 +110,9 @@ This project builds a retail inventory twin for small retail settings (coffee sh
 1. SQLite. "About SQLite." sqlite.org/about.html
 2. OpenWeather. "Pricing / One Call API 3.0." openweathermap.org/price
 3. Prophet Documentation. "Seasonality, Holiday Effects, and Regressors"; "Diagnostics." facebook.github.io/prophet/
+
+
+
+## update(4/2/2026): 1. 3 mouth data, weather/coffee store. is not enough for Prophet model; 2. add RAG or similar way for unforseen product;
+## 3.established various input/output pipline in model's real working scenario. Current thinking: input could be csv file, output could be text only
+## forcasting report. Adding other formats as bonus is still under consideration.

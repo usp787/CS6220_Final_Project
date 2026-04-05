@@ -1,0 +1,9 @@
+item_id,item_name,current_stock,days_until_stockout_base,days_until_stockout_weather,stockout_day_shift
+I008,Sandwich,106,7,5,-2
+I004,Americano,87,4,7,3
+I007,Croissant,131,8,8,0
+I001,Espresso,246,7,11,4
+I006,Muffin,143,11,11,0
+I002,Latte,296,6,11,5
+I003,Cappuccino,258,9,>14,N/A
+I005,Green Tea,156,11,>14,N/A

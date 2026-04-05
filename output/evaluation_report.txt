@@ -1,0 +1,41 @@
+====================================================================
+  Retail Inventory Twin — Model Evaluation Report
+====================================================================
+
+1. FORECAST ACCURACY (in-sample MAE / RMSE)
+--------------------------------------------------------------------
+Item            MAE Base  MAE Wthr    ΔMAE  RMSE Base  RMSE Wthr
+--------------------------------------------------------------------
+Latte               6.11      3.32   +2.79       7.72       4.24
+Cappuccino          4.44      2.86   +1.58       5.60       3.39
+Espresso            3.54      2.73   +0.82       4.58       3.57
+Sandwich            3.31      2.87   +0.45       4.06       3.70
+Americano           3.08      2.77   +0.32       3.94       3.64
+Green Tea           2.36      2.29   +0.08       2.98       2.83
+Croissant           2.24      2.21   +0.03       2.78       2.76
+Muffin              2.20      2.20   -0.00       2.86       2.85
+--------------------------------------------------------------------
+  Weather clearly improves MAE (>0.5): 3/8 items
+  Marginal improvement (0–0.5):          4/8 items
+  No improvement / worse:                1/8 items
+
+2. STOCK-OUT TIMING SHIFT  (weather days − baseline days)
+--------------------------------------------------------------------
+Item            Stock   Base days   Wthr days    Shift   Wthr helps?
+--------------------------------------------------------------------
+Sandwich          106           7           5     -2.0      Marginal
+Americano          87           4           7      3.0      Marginal
+Croissant         131           8           8      0.0      Marginal
+Latte             296           6          11      5.0           Yes
+Muffin            143          11          11      0.0            No
+Espresso          246           7          11      4.0           Yes
+Cappuccino        258           9         >14      nan           Yes
+Green Tea         156          11         >14      nan      Marginal
+
+3. KEY FINDINGS
+--------------------------------------------------------------------
+  • Largest MAE improvement: Latte (ΔMAE = +2.79)
+  • Stock-out timing shifted ≥1 day: Latte (+5d), Espresso (+4d), Americano (+3d), Sandwich (-2d)
+  • Items with no weather benefit: Muffin — baseline model sufficient for these.
+
+====================================================================
