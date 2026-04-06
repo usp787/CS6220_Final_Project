@@ -29,8 +29,9 @@ results = []
 PROPHET_KWARGS = dict(
     changepoint_prior_scale=0.05,
     seasonality_prior_scale=10.0,
-    yearly_seasonality=False,
+    yearly_seasonality=True,   # enabled: 2+ years of training data now available
     weekly_seasonality=True,
+    seasonality_mode="multiplicative",  # better for demand that scales with season
     daily_seasonality=False,
 )
 

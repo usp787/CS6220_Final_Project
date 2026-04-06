@@ -1,6 +1,6 @@
 """
 Generate synthetic coffee-shop sales data for the Retail Inventory Twin project.
-Creates transaction-level CSV files (Jan–Mar 2026) and a stock snapshot.
+Creates transaction-level CSV files (Jan 2024 – Mar 2026) and a stock snapshot.
 """
 import pandas as pd
 import numpy as np
@@ -21,13 +21,14 @@ ITEMS = [
     {"item_id": "I008", "item_name": "Sandwich",     "base_txn": 13, "weather_sensitivity":  0.2},
 ]
 
-# ── Date range: 3 months of history ──────────────────────────────────────────
-dates = pd.date_range("2026-01-01", "2026-03-27", freq="D")
+# ── Date range: Jan 2024 – Mar 2026 (~27 months of history) ──────────────────
+dates = pd.date_range("2024-01-01", "2026-03-27", freq="D")
 n_days = len(dates)
 
-# Boston-like temperature curve (Celsius): cold Jan, warming toward late Mar
-day_idx = np.arange(n_days)
-temp_avg = -5 + 18 * (day_idx / (n_days - 1)) + np.random.normal(0, 2.5, n_days)
+# Boston annual temperature cycle (Celsius).
+# Formula: 10 - 13*cos(2π*doy/365) gives ~-3°C in Jan, ~23°C in Jul.
+day_of_year = np.array([d.timetuple().tm_yday for d in dates])
+temp_avg = 10.0 - 13.0 * np.cos(2 * np.pi * day_of_year / 365) + np.random.normal(0, 2.5, n_days)
 
 # ── Generate transaction-level records ───────────────────────────────────────
 records = []
@@ -57,10 +58,16 @@ for d_idx, date in enumerate(dates):
 df = pd.DataFrame(records)
 df["date_parsed"] = pd.to_datetime(df["date"])
 
-# ── Save one CSV per month ────────────────────────────────────────────────────
-for month, label in [(1, "jan"), (2, "feb"), (3, "mar")]:
-    subset = df[df["date_parsed"].dt.month == month].drop(columns="date_parsed")
-    path = f"data/sales_{label}_2026.csv"
+# ── Save one CSV per month (dynamic across all years) ────────────────────────
+MONTH_LABELS = {1:"jan",2:"feb",3:"mar",4:"apr",5:"may",6:"jun",
+                7:"jul",8:"aug",9:"sep",10:"oct",11:"nov",12:"dec"}
+
+for (year, month), group in df.groupby(
+    [df["date_parsed"].dt.year, df["date_parsed"].dt.month]
+):
+    label = MONTH_LABELS[month]
+    subset = group.drop(columns="date_parsed")
+    path = f"data/sales_{label}_{year}.csv"
     subset.to_csv(path, index=False)
     print(f"  Saved {len(subset):,} transaction records → {path}")
 

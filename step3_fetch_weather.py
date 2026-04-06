@@ -1,7 +1,7 @@
 """
 Step 3 — Fetch Weather Data
-Pulls weather aligned with the sales date range (Jan–Mar 2026) plus a 14-day
-forecast window (Mar 28 – Apr 10 2026).
+Pulls weather aligned with the sales date range (Jan 2024 – Mar 2026) plus a
+14-day forecast window (Mar 28 – Apr 10 2026).
 
 If the environment variable OPENWEATHER_API_KEY is set, the script will attempt
 a live call to the OpenWeather One Call API 3.0.  Otherwise it generates
@@ -18,17 +18,17 @@ API_KEY = os.environ.get("OPENWEATHER_API_KEY", "")
 # ─── Synthetic weather generator ─────────────────────────────────────────────
 def make_synthetic_weather(start: str, end: str, seed: int = 42) -> pd.DataFrame:
     """
-    Boston-like daily weather for Jan–Apr 2026.
-    Temperature rises from ~-5 °C in Jan to ~12 °C in Apr.
+    Boston-like daily weather for multi-year spans.
+    Uses an annual sinusoidal cycle: ~-3 °C in Jan, ~23 °C in Jul.
     Precipitation events occur ~30 % of days.
     """
     np.random.seed(seed)
     dates = pd.date_range(start, end, freq="D")
     n = len(dates)
-    idx = np.arange(n)
 
-    # Gentle warming trend + daily noise
-    temp_avg  = -5 + 17 * (idx / max(n - 1, 1)) + np.random.normal(0, 2.8, n)
+    # Annual temperature cycle keyed to day-of-year + daily noise
+    day_of_year = np.array([d.timetuple().tm_yday for d in dates])
+    temp_avg  = 10.0 - 13.0 * np.cos(2 * np.pi * day_of_year / 365) + np.random.normal(0, 2.8, n)
     temp_min  = temp_avg - np.random.uniform(2.5, 5.5, n)
     temp_max  = temp_avg + np.random.uniform(2.5, 5.5, n)
 
@@ -92,7 +92,7 @@ def fetch_openweather(api_key: str, lat: float, lon: float,
 
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
-HIST_START, HIST_END = "2026-01-01", "2026-03-27"
+HIST_START, HIST_END = "2024-01-01", "2026-03-27"
 FCAST_START, FCAST_END = "2026-03-28", "2026-04-10"
 
 if API_KEY:
@@ -105,7 +105,7 @@ if API_KEY:
         hist_df  = make_synthetic_weather(HIST_START,  HIST_END,  seed=42)
         fcast_df = make_synthetic_weather(FCAST_START, FCAST_END, seed=99)
 else:
-    print("No API key found — using synthetic weather data (Boston, Jan–Apr 2026).")
+    print("No API key found — using synthetic weather data (Boston, Jan 2024–Apr 2026).")
     hist_df  = make_synthetic_weather(HIST_START,  HIST_END,  seed=42)
     fcast_df = make_synthetic_weather(FCAST_START, FCAST_END, seed=99)
 
