@@ -142,3 +142,62 @@ The training window was expanded from 3 months (Jan–Mar 2026) to 27 months (Ja
 - The **weather benefit (ΔMAE)** is preserved across all items and improves for Espresso (+1.50 vs. +0.82 previously), confirming the model extracts more temperature signal from the richer dataset.
 - The 27-month model captures the **summer demand trough** for hot drinks — a seasonal pattern the 3-month model was structurally blind to.
 - Stock-out timing predictions are more conservative and operationally stable compared to the 3-month model, which produced overly optimistic stock-life estimates driven by a narrow rising-temperature window.
+
+---
+
+## Future Plan (2026-04-06)
+
+### Part 1 — Web Frontend (FastAPI + HTML)
+
+**Step 1 — FastAPI backend**
+
+Create a `app.py` entry point with three endpoints:
+
+- `POST /validate` — accepts uploaded CSV files, passes them through the RAG validation layer (Part 2), and returns a validation result (accepted / rejected / warnings) before any forecasting begins.
+- `POST /forecast` — accepts validated CSV files, triggers steps 1–9 as a background task, and returns the text content of `stockout_report.txt` when complete.
+- `GET /report` — returns the most recently generated `stockout_report.txt` as plain text.
+
+Steps 1–9 are rewired from standalone scripts into importable functions called by the backend. No other logic in the core pipeline changes.
+
+**Step 2 — HTML frontend**
+
+A single static HTML page (`index.html`) served by FastAPI's `StaticFiles` mount:
+
+- A file picker restricted to `.csv` for sales data, and a second picker for the stock snapshot CSV.
+- A submit button that calls `/validate` first; on acceptance, calls `/forecast`.
+- A read-only text area that displays the returned `stockout_report.txt` content in the browser.
+- Plain `fetch` API calls only — no JavaScript framework.
+
+JSON input and plot output are deferred as optional extras.
+
+---
+
+### Part 2 — RAG Input Validation Layer
+
+The RAG layer runs between upload and step 1 to reject or flag data that is outside the model's training domain or structurally incompatible with the expected schema.
+
+#### Vector Database Content
+
+The vector store holds three categories of short text documents:
+
+1. **Known item profiles** — one document per trained item (I001–I008), describing item name, category (hot drink / cold drink / food), typical daily demand range, and seasonal behavior (e.g., `"Espresso — hot drink — demand peaks in winter, 20–35 units/day"`).
+2. **Schema definition** — expected CSV structure: required columns (`transaction_id`, `date`, `item_id`, `item_name`, `quantity`), date format, and value constraints.
+3. **Domain boundary examples** — short descriptions of out-of-scope data: non-food retail (auto parts, electronics), non-transactional formats (sensor logs, financial ledgers), and item categories absent from the trained set.
+
+Total document count: ~20–30 chunks. `chromadb` or `faiss` as an in-process vector store is sufficient; no hosted vector database is needed at this scale.
+
+#### Embedding Model
+
+`sentence-transformers/all-MiniLM-L6-v2` (22 M parameters, 384-dimensional output). Inputs are short texts — CSV column headers and a few sampled rows rendered as natural language — so a compact model is appropriate. Runs on CPU with negligible latency.
+
+
+
+#### Validation Logic Flow
+
+1. Parse the uploaded CSV header and sample 3–5 rows.
+2. Render as a short natural-language string (e.g., `"columns: date, item_id, item_name, qty — items: latte, espresso, muffin"`).
+3. Embed with `all-MiniLM-L6-v2` and query the vector store for top-3 documents with similarity scores.
+4. **Pass** if top similarity ≥ 0.60 and all required columns are present.
+5. **Warn** if similarity is 0.35–0.60 or a required column is missing — pipeline proceeds with a caution message.
+6. **Reject** if top similarity < 0.35 — block the pipline and return
+the error message to user and ask valid input.
