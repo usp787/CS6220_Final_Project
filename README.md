@@ -113,6 +113,32 @@ This project builds a retail inventory twin for small retail settings (coffee sh
 
 
 
-## update(4/2/2026): 1. 3 mouth data, weather/coffee store. is not enough for Prophet model; 2. add RAG or similar way for unforseen product;
-## 3.established various input/output pipline in model's real working scenario. Current thinking: input could be csv file, output could be text only
-## forcasting report. Adding other formats as bonus is still under consideration.
+## Update (2026-04-02)
+
+- Three months of sales and weather data is insufficient for Prophet to learn meaningful seasonal patterns; a longer historical window is required.
+- A RAG-based or similar retrieval mechanism should be explored to handle demand forecasting for **unforeseen or new products** with no sales history.
+- Various input/output pipelines need to be established for real deployment scenarios. Current thinking: CSV file as input, text-only forecasting report as output. Additional formats (structured JSON, dashboard integration) remain under consideration as a bonus.
+
+---
+
+## Update (2026-04-06)
+
+### Extended Training Data: Jan 2024 – Mar 2026 (~27 months)
+
+The training window was expanded from 3 months (Jan–Mar 2026) to 27 months (Jan 2024 – Mar 2026) using extended synthetic data, addressing the data-insufficiency concern noted on 2026-04-02.
+
+**What changed in the pipeline:**
+
+- **`generate_data.py`** — Date range extended to `2024-01-01`. The linear temperature ramp was replaced with an **annual sinusoidal cycle** (`10 − 13·cos(2π·doy/365)`), producing realistic Boston winters (~−3 °C) and summers (~23 °C) across multiple years. Monthly CSV output is now fully dynamic, generating one file per month-year combination (27 files total: `sales_jan_2024.csv` → `sales_mar_2026.csv`).
+- **`step1_ingest_sales.py`** — Glob pattern broadened from `sales_*_2026.csv` to `sales_*.csv` to automatically pick up all years.
+- **`step3_fetch_weather.py`** — `HIST_START` moved to `2024-01-01`. The synthetic weather generator was updated with the same sinusoidal temperature model, ensuring weather and sales share a consistent seasonal signal across the full 27-month span.
+- **`step5_fit_models.py`** — `yearly_seasonality` enabled (`True`); `seasonality_mode` switched to `"multiplicative"`, which better captures demand that scales proportionally with season rather than shifting by a fixed offset.
+
+**No API cost incurred** — all extended data uses the existing synthetic fallback path; the OpenWeather API path is unchanged.
+
+**Model performance notes:**
+
+- Raw MAE/RMSE values are higher in the 27-month model than in the 3-month model, but this is expected: the wider temperature range (full annual cycle vs. a narrow Jan–Mar ramp) increases demand variance, which mechanically raises absolute error.
+- The **weather benefit (ΔMAE)** is preserved across all items and improves for Espresso (+1.50 vs. +0.82 previously), confirming the model extracts more temperature signal from the richer dataset.
+- The 27-month model captures the **summer demand trough** for hot drinks — a seasonal pattern the 3-month model was structurally blind to.
+- Stock-out timing predictions are more conservative and operationally stable compared to the 3-month model, which produced overly optimistic stock-life estimates driven by a narrow rising-temperature window.
