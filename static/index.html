@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retail Inventory Twin</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: #f5f6fa;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.10);
+      padding: 2rem 2.4rem;
+      width: 100%;
+      max-width: 680px;
+    }
+
+    h1 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin-bottom: .3rem;
+      color: #1a1a2e;
+    }
+    .subtitle {
+      font-size: .9rem;
+      color: #666;
+      margin-bottom: 1.8rem;
+      line-height: 1.5;
+    }
+
+    .field { margin-bottom: 1.2rem; }
+    label  { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .35rem; color: #333; }
+
+    input[type="file"] {
+      display: block;
+      width: 100%;
+      padding: .55rem .7rem;
+      border: 1.5px solid #d0d5dd;
+      border-radius: 6px;
+      background: #fafafa;
+      font-size: .88rem;
+      cursor: pointer;
+    }
+    input[type="file"]:focus { outline: 2px solid #4f46e5; border-color: transparent; }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .85rem;
+      color: #555;
+      margin-bottom: 1.4rem;
+    }
+    .checkbox-row input { width: 15px; height: 15px; cursor: pointer; }
+
+    button {
+      width: 100%;
+      padding: .75rem 1rem;
+      background: #4f46e5;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .18s;
+    }
+    button:hover:not(:disabled) { background: #4338ca; }
+    button:disabled { background: #a5b4fc; cursor: not-allowed; }
+
+    /* Status banner */
+    #statusBanner {
+      margin-top: 1.2rem;
+      padding: .65rem 1rem;
+      border-radius: 6px;
+      font-size: .88rem;
+      display: none;
+    }
+    #statusBanner.info    { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+    #statusBanner.success { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+    #statusBanner.warning { background: #fffbeb; color: #92400e; border: 1px solid #fde68a; }
+    #statusBanner.error   { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+
+    /* Spinner */
+    .spinner {
+      display: inline-block;
+      width: 14px; height: 14px;
+      border: 2px solid currentColor;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      vertical-align: middle;
+      margin-right: .4rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Report output */
+    #reportSection { margin-top: 1.6rem; display: none; }
+    #reportSection h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: .5rem;
+      color: #333;
+    }
+    textarea#report {
+      width: 100%;
+      height: 360px;
+      padding: .8rem 1rem;
+      font-family: "Cascadia Code", "Fira Mono", "Consolas", monospace;
+      font-size: .8rem;
+      line-height: 1.55;
+      border: 1.5px solid #d0d5dd;
+      border-radius: 6px;
+      background: #1e1e2e;
+      color: #cdd6f4;
+      resize: vertical;
+    }
+
+    .meta { font-size: .78rem; color: #888; margin-top: .4rem; }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Retail Inventory Twin</h1>
+  <p class="subtitle">
+    Upload your sales history and current stock snapshot to generate a
+    <strong>14-day stock-out forecast report</strong> powered by Prophet.
+  </p>
+
+  <!-- Sales files -->
+  <div class="field">
+    <label for="salesFiles">Sales CSV files <span style="color:#888;font-weight:400">(sales_*.csv — multiple allowed)</span></label>
+    <input type="file" id="salesFiles" accept=".csv" multiple />
+  </div>
+
+  <!-- Stock snapshot -->
+  <div class="field">
+    <label for="stockFile">Stock snapshot CSV <span style="color:#888;font-weight:400">(stock_snapshot.csv)</span></label>
+    <input type="file" id="stockFile" accept=".csv" />
+  </div>
+
+  <!-- Retrain option -->
+  <div class="checkbox-row">
+    <input type="checkbox" id="retrain" />
+    <label for="retrain" style="margin:0;font-weight:400">
+      Retrain Prophet models on uploaded data
+      <span style="color:#aaa">(adds ~5 minutes; uncheck to reuse existing models)</span>
+    </label>
+  </div>
+
+  <button id="runBtn" onclick="runForecast()">Validate &amp; Run Forecast</button>
+
+  <div id="statusBanner"></div>
+
+  <!-- Report output -->
+  <div id="reportSection">
+    <h2>Stock-Out Report</h2>
+    <textarea id="report" readonly></textarea>
+    <p class="meta" id="reportMeta"></p>
+  </div>
+</div>
+
+<script>
+  function setStatus(msg, type) {
+    const el = document.getElementById("statusBanner");
+    el.style.display = "block";
+    el.className = type;
+    el.innerHTML = msg;
+  }
+
+  function clearStatus() {
+    const el = document.getElementById("statusBanner");
+    el.style.display = "none";
+    el.className = "";
+    el.innerHTML = "";
+  }
+
+  function setRunning(busy) {
+    document.getElementById("runBtn").disabled = busy;
+  }
+
+  async function runForecast() {
+    const salesInput = document.getElementById("salesFiles");
+    const stockInput = document.getElementById("stockFile");
+    const retrain    = document.getElementById("retrain").checked;
+
+    // ── Client-side presence checks ──────────────────────────────────────────
+    if (!salesInput.files.length) {
+      setStatus("Please select at least one sales CSV file.", "error");
+      return;
+    }
+    if (!stockInput.files.length) {
+      setStatus("Please select the stock snapshot CSV file.", "error");
+      return;
+    }
+
+    document.getElementById("reportSection").style.display = "none";
+    setRunning(true);
+
+    // ── Step 1: Validate ──────────────────────────────────────────────────────
+    setStatus('<span class="spinner"></span>Validating files…', "info");
+
+    const validateForm = new FormData();
+    for (const f of salesInput.files)  validateForm.append("sales_files", f);
+    validateForm.append("stock_file", stockInput.files[0]);
+
+    let valResult;
+    try {
+      const resp = await fetch("/validate", { method: "POST", body: validateForm });
+      valResult  = await resp.json();
+      if (!resp.ok) {
+        setStatus("Validation rejected: " + (valResult.message || resp.statusText), "error");
+        setRunning(false);
+        return;
+      }
+    } catch (err) {
+      setStatus("Network error during validation: " + err.message, "error");
+      setRunning(false);
+      return;
+    }
+
+    if (valResult.status === "rejected") {
+      setStatus("Validation rejected: " + valResult.message, "error");
+      setRunning(false);
+      return;
+    }
+
+    // Show warnings but continue
+    if (valResult.status === "warning" && valResult.warnings?.length) {
+      setStatus(
+        "Warning: " + valResult.warnings.join(" ") + " — proceeding with forecast.",
+        "warning"
+      );
+      await new Promise(r => setTimeout(r, 2000));   // let user read the warning
+    }
+
+    // ── Step 2: Forecast ──────────────────────────────────────────────────────
+    const retrainNote = retrain ? " (retraining models — this will take several minutes…)" : "";
+    setStatus('<span class="spinner"></span>Running pipeline' + retrainNote, "info");
+
+    const forecastForm = new FormData();
+    for (const f of salesInput.files)  forecastForm.append("sales_files", f);
+    forecastForm.append("stock_file", stockInput.files[0]);
+
+    const url = "/forecast?retrain=" + retrain;
+    let fcResult;
+    try {
+      const resp = await fetch(url, { method: "POST", body: forecastForm });
+      fcResult   = await resp.json();
+      if (!resp.ok) {
+        const detail = fcResult.detail || resp.statusText;
+        setStatus("Pipeline error:<br><pre style='margin-top:.4rem;white-space:pre-wrap;font-size:.78rem'>" + detail + "</pre>", "error");
+        setRunning(false);
+        return;
+      }
+    } catch (err) {
+      setStatus("Network error during forecast: " + err.message, "error");
+      setRunning(false);
+      return;
+    }
+
+    // ── Show result ───────────────────────────────────────────────────────────
+    clearStatus();
+    setStatus("Forecast complete.", "success");
+
+    const reportEl   = document.getElementById("report");
+    const sectionEl  = document.getElementById("reportSection");
+    const metaEl     = document.getElementById("reportMeta");
+
+    reportEl.value   = fcResult.report || "(empty report)";
+    metaEl.textContent = "Generated " + new Date().toLocaleString();
+    sectionEl.style.display = "block";
+    reportEl.scrollTop = 0;
+
+    setRunning(false);
+  }
+</script>
+
+</body>
+</html>

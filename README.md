@@ -190,8 +190,6 @@ Total document count: ~20–30 chunks. `chromadb` or `faiss` as an in-process ve
 
 `sentence-transformers/all-MiniLM-L6-v2` (22 M parameters, 384-dimensional output). Inputs are short texts — CSV column headers and a few sampled rows rendered as natural language — so a compact model is appropriate. Runs on CPU with negligible latency.
 
-
-
 #### Validation Logic Flow
 
 1. Parse the uploaded CSV header and sample 3–5 rows.
@@ -199,5 +197,51 @@ Total document count: ~20–30 chunks. `chromadb` or `faiss` as an in-process ve
 3. Embed with `all-MiniLM-L6-v2` and query the vector store for top-3 documents with similarity scores.
 4. **Pass** if top similarity ≥ 0.60 and all required columns are present.
 5. **Warn** if similarity is 0.35–0.60 or a required column is missing — pipeline proceeds with a caution message.
-6. **Reject** if top similarity < 0.35 — block the pipline and return
-the error message to user and ask valid input.
+6. **Reject** if top similarity < 0.35 — block the pipline and return the error message to user and ask valid input.
+
+---
+
+## Update (2026-04-07)
+
+### Part 1 — Web Frontend Implemented (FastAPI + HTML)
+
+The web frontend described in the Future Plan has been built and is fully functional. Three new files were added; no existing pipeline scripts were modified.
+
+| File | Role |
+|------|------|
+| `pipeline.py` | Orchestrates steps 1–9 by running each script as a subprocess; skips step 5 when trained models already exist (`retrain=False`) |
+| `app.py` | FastAPI backend — serves the HTML page and exposes the three API endpoints |
+| `static/index.html` | Single-page frontend — file pickers, status banner, report textarea |
+
+#### How to start the server
+
+```bash
+# From the project root
+d:/Anaconda/envs/local/python.exe -m uvicorn app:app --host 0.0.0.0 --port 8000
+```
+
+Then open **http://localhost:8000** in a browser.
+
+#### How to use the frontend
+
+1. **Select sales CSV files** — click the first file picker and choose one or more `sales_*.csv` files (e.g. `sales_jan_2026.csv`, `sales_feb_2026.csv` …).  Multiple files are supported.
+2. **Select stock snapshot** — click the second file picker and choose `stock_snapshot.csv`.
+3. *(Optional)* **Check "Retrain Prophet models"** if you want the pipeline to re-fit all 16 Prophet models on the uploaded data.  Leave it unchecked to reuse the existing trained models — this reduces response time from ~5 minutes to under 30 seconds.
+4. **Click "Validate & Run Forecast"** — the button first calls `POST /validate` to check that both files contain the required columns.  On success it calls `POST /forecast`, which runs the full pipeline and returns the report.
+5. **Read the report** — the stock-out risk ranking and forecast detail appear in the dark-themed text area at the bottom of the page.
+
+#### API endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `GET` | `/` | Serves `static/index.html` |
+| `POST` | `/validate` | Schema-validates uploaded CSVs; returns `accepted` / `warning` / `rejected` |
+| `POST` | `/forecast?retrain=false` | Saves files to `data/`, runs pipeline steps 1–9, returns `stockout_report.txt` as JSON |
+| `GET` | `/report` | Returns the most recent `output/stockout_report.txt` as plain text |
+
+#### Known fix applied
+
+`step8_evaluate.py` uses Unicode characters (`Δ`, `−`) in its printed output, which caused a `UnicodeEncodeError` on Windows (GBK default encoding).  `pipeline.py` resolves this by setting `PYTHONIOENCODING=utf-8` in each subprocess environment — no changes to any step script were needed.
+
+---
+
