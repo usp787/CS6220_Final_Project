@@ -245,3 +245,77 @@ Then open **http://localhost:8000** in a browser.
 
 ---
 
+### Part 2 — RAG Input Validation Layer Implemented
+
+The RAG validation layer described in the Future Plan has been built and is active inside `POST /validate`.  One new file was added: `rag_validator.py`.
+
+#### Architecture
+
+| Component | Choice | Reason |
+|-----------|--------|--------|
+| Vector store | `chromadb.EphemeralClient` (in-process) | ~20 docs — no server needed; rebuilt from code on startup in < 1 s |
+| Distance metric | Cosine (`hnsw:space: cosine`) | Scale-invariant; standard for sentence embeddings |
+| Embedding model | `sentence-transformers/all-MiniLM-L6-v2` | 22 M params, 384-dim output; CPU-only, negligible latency |
+
+#### Document corpus (19 documents)
+
+| Category | Count | Content |
+|----------|-------|---------|
+| `item_profile` | 8 | One document per trained item (I001–I008): name, category, demand range, seasonal pattern |
+| `schema` | 4 | Expected column names, date format, value constraints, valid item name list |
+| `boundary` | 7 | Out-of-scope examples: auto parts, electronics, IoT sensor logs, financial ledgers, medical supplies, apparel retail, real estate |
+
+#### Two-query strategy
+
+A single combined query (columns + items) caused column vocabulary (`transaction_id`, `date`, `item_id`…) to dominate the embedding and mask domain mismatches — a CSV with electronics items but correct columns scored 0.74 against the schema doc regardless of content.
+
+The fix is to run two separate queries:
+
+- **Column query** — `"CSV file with columns: <col1>, <col2>, …"` — compared against schema and item-profile docs to verify structural compatibility.
+- **Item query** — `"items sold in this dataset: <item1>, <item2>, …"` — compared against item-profile docs only for domain similarity, and against the full corpus for boundary detection.
+
+The reported similarity and decision threshold are based on the item query, which cleanly separates "Espresso, Latte, Muffin" (similarity ~0.68) from "Laptop, HDMI cable, tablet" (similarity ~0.38).
+
+#### Decision thresholds (item-query cosine similarity vs item profiles)
+
+| Similarity | Decision | Effect |
+|-----------|----------|--------|
+| ≥ 0.60 | `accepted` | Pipeline proceeds normally |
+| 0.35 – 0.59 | `warning` | Pipeline proceeds; caution message returned to frontend |
+| < 0.35 | `rejected` | Pipeline blocked; user asked to provide valid input |
+
+A **boundary flag** overrides `accepted` → `warning` when the item query is more similar to an out-of-scope document than to any item profile, even if the threshold was met.
+
+#### Observed similarity scores (tests on 2026-04-07)
+
+| Input | Item similarity | Decision |
+|-------|----------------|----------|
+| `sales_jan_2026.csv` (Espresso, Latte, …) | 0.685 | accepted |
+| Explicit Espresso + Latte rows | 0.634 | accepted |
+| Valid schema, unknown items | 0.475 | warning |
+| Valid schema, electronics items (Laptop, HDMI cable) | 0.380 + boundary flag | warning |
+
+#### Validation flow in `POST /validate`
+
+```
+Upload received
+    │
+    ▼
+Stage 1 — Schema gate (fast, no model)
+  Required columns present? ──No──► HTTP 422 rejected
+    │ Yes
+    ▼
+Stage 2 — RAG domain check (rag_validator.py)
+  Item similarity ≥ 0.60 AND no boundary flag? ──► accepted
+  Item similarity 0.35–0.59 OR boundary flag?  ──► warning  (pipeline proceeds)
+  Item similarity < 0.35?                       ──► HTTP 422 rejected
+    │
+    ▼
+Stock snapshot — schema gate only (no RAG)
+    │
+    ▼
+Aggregate result returned to frontend
+```
+
+---
+

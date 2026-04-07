@@ -4,9 +4,21 @@ app.py — FastAPI backend for the Retail Inventory Twin web frontend.
 Endpoints
 ---------
 GET  /                  Serve the HTML frontend (index.html)
-POST /validate          Schema-validate uploaded CSV files before forecasting
+POST /validate          Schema + RAG domain validation before forecasting
 POST /forecast          Save files, run pipeline, return stockout_report.txt
 GET  /report            Return the most recent stockout_report.txt
+
+Validation pipeline (POST /validate)
+-------------------------------------
+  1. Schema gate  — checks required columns in each CSV (fast, no model needed).
+                    Immediate rejection if columns are missing.
+  2. RAG check    — embeds a natural-language summary of each sales CSV with
+                    all-MiniLM-L6-v2 and queries a ChromaDB vector store of
+                    ~20 domain documents (item profiles, schema specs, boundary
+                    examples).  Cosine similarity against valid-domain docs:
+                      ≥ 0.60  → accepted
+                      0.35–0.59 → warning (pipeline proceeds with caution)
+                      < 0.35  → rejected (pipeline blocked)
 
 Start the server
 ----------------
@@ -25,6 +37,7 @@ from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 
 from pipeline import BASE_DIR, run_pipeline
+from rag_validator import validate_sales_csv
 
 # ── App setup ─────────────────────────────────────────────────────────────────
 app = FastAPI(
@@ -44,8 +57,8 @@ STOCK_REQUIRED = {"item_id", "item_name", "current_stock"}
 # ── Helpers ───────────────────────────────────────────────────────────────────
 def _check_schema(content: bytes, required: set, label: str) -> dict:
     """
-    Parse a CSV from bytes and verify required columns are present.
-    Returns a dict with keys: status ('accepted'/'rejected'), message, rows.
+    Fast schema gate: parse the CSV and verify required columns exist.
+    Returns dict with keys: status ('accepted'/'rejected'), message, rows.
     """
     try:
         df = pd.read_csv(io.BytesIO(content), nrows=5)
@@ -60,9 +73,8 @@ def _check_schema(content: bytes, required: set, label: str) -> dict:
             "rows": 0,
         }
 
-    # Count rows without re-reading the whole file
     try:
-        total_rows = sum(1 for _ in io.BytesIO(content)) - 1  # subtract header
+        total_rows = sum(1 for _ in io.BytesIO(content)) - 1   # subtract header
     except Exception:
         total_rows = -1
 
@@ -84,55 +96,121 @@ async def validate(
     stock_file: UploadFile = File(..., description="stock_snapshot.csv"),
 ):
     """
-    Validate uploaded CSV files against expected schemas.
+    Two-stage validation: schema check → RAG domain check.
 
     Returns
     -------
     {
-        "status": "accepted" | "warning" | "rejected",
-        "message": "...",
+        "status":   "accepted" | "warning" | "rejected",
+        "message":  "...",
         "warnings": [...],
-        "files": [{ "status", "message", "rows" }, ...]
+        "files": [
+            {
+                "filename":   "...",
+                "status":     "accepted"|"warning"|"rejected",
+                "message":    "...",
+                "rows":       int,
+                "similarity": float,       # RAG cosine score (-1 if unavailable)
+                "rag_details": [...]        # top-3 matching documents
+            },
+            ...
+        ]
     }
     """
-    file_results = []
-    warnings: List[str] = []
+    file_results: List[dict] = []
+    warnings:     List[str]  = []
+    overall_rejected = False
 
-    # --- Validate each sales file ---
+    # ── Validate each sales file ──────────────────────────────────────────────
     for upload in sales_files:
         content = await upload.read()
-        result = _check_schema(content, SALES_REQUIRED, upload.filename or "sales file")
-        if result["status"] == "rejected":
+        fname   = upload.filename or "sales_file.csv"
+
+        # Stage 1: schema gate
+        schema_result = _check_schema(content, SALES_REQUIRED, fname)
+        if schema_result["status"] == "rejected":
             return JSONResponse(
                 status_code=422,
-                content={"status": "rejected", "message": result["message"], "warnings": [], "files": []},
+                content={
+                    "status":   "rejected",
+                    "message":  schema_result["message"],
+                    "warnings": [],
+                    "files":    [],
+                },
             )
-        file_results.append({"filename": upload.filename, **result})
+
+        # Stage 2: RAG domain check
+        rag_result = validate_sales_csv(content, filename=fname)
+
+        entry = {
+            "filename":    fname,
+            "status":      rag_result["status"],
+            "message":     rag_result["message"],
+            "rows":        schema_result["rows"],
+            "similarity":  rag_result["similarity"],
+            "rag_details": rag_result["details"],
+        }
+        file_results.append(entry)
+
+        if rag_result["status"] == "rejected":
+            overall_rejected = True
+        elif rag_result["status"] == "warning":
+            warnings.append(f"{fname}: {rag_result['message']}")
 
         # Naming convention check (non-blocking warning)
-        fname = upload.filename or ""
         if not (fname.startswith("sales_") and fname.endswith(".csv")):
             warnings.append(
                 f"'{fname}' does not follow the expected naming pattern (sales_*.csv). "
                 "Ensure it matches the glob pattern used by step 1."
             )
 
-    # --- Validate stock snapshot ---
+    # ── Validate stock snapshot (schema only — no RAG) ────────────────────────
     stock_content = await stock_file.read()
-    stock_result = _check_schema(stock_content, STOCK_REQUIRED, stock_file.filename or "stock file")
-    if stock_result["status"] == "rejected":
+    stock_schema  = _check_schema(stock_content, STOCK_REQUIRED, stock_file.filename or "stock file")
+    if stock_schema["status"] == "rejected":
         return JSONResponse(
             status_code=422,
-            content={"status": "rejected", "message": stock_result["message"], "warnings": [], "files": []},
+            content={
+                "status":   "rejected",
+                "message":  stock_schema["message"],
+                "warnings": [],
+                "files":    [],
+            },
         )
-    file_results.append({"filename": stock_file.filename, **stock_result})
+    file_results.append({
+        "filename":    stock_file.filename,
+        "status":      "accepted",
+        "message":     stock_schema["message"],
+        "rows":        stock_schema["rows"],
+        "similarity":  None,
+        "rag_details": [],
+    })
 
-    overall = "warning" if warnings else "accepted"
+    # ── Aggregate decision ────────────────────────────────────────────────────
+    if overall_rejected:
+        # Surface the first rejection reason as the top-level message
+        rejected_entry = next(f for f in file_results if f["status"] == "rejected")
+        return JSONResponse(
+            status_code=422,
+            content={
+                "status":   "rejected",
+                "message":  rejected_entry["message"],
+                "warnings": warnings,
+                "files":    file_results,
+            },
+        )
+
+    overall_status  = "warning" if warnings else "accepted"
+    overall_message = (
+        "All files passed validation."
+        if overall_status == "accepted"
+        else f"{len(warnings)} warning(s) — review before proceeding."
+    )
     return {
-        "status": overall,
-        "message": "All files passed schema validation.",
+        "status":   overall_status,
+        "message":  overall_message,
         "warnings": warnings,
-        "files": file_results,
+        "files":    file_results,
     }
 
 
