@@ -319,3 +319,35 @@ Aggregate result returned to frontend
 
 ---
 
+## Update (2026-04-08)
+
+### RAG Validation Hardening — Boundary Coverage and Threshold Tuning
+
+Testing with dummy CSV files (correct column layout but electronics product names: Xbox, PlayStation, iPad, iPhone, MacBook, Surface) revealed that the RAG validator returned `warning` instead of `rejected`, allowing the pipeline to proceed on out-of-domain data.
+
+**Root cause (three interacting gaps):**
+
+1. **Boundary documents too narrow** — the existing electronics boundary doc listed `laptop, smartphone, tablet, HDMI cable, charger, USB hub`, which did not cover gaming consoles or Apple hardware. The boundary check failed to trigger because the dummy items had low similarity to those specific products.
+2. **Row sampling too shallow** — `nrows=5` meant the item query often saw only one unique product name (e.g., "Xbox"), giving the boundary and similarity checks weak signal.
+3. **Warning threshold too lenient** — items with similarity 0.35–0.59 were passed through as warnings without blocking.
+
+**Changes made to `rag_validator.py`:**
+
+| Change | Before | After |
+|--------|--------|-------|
+| Boundary documents | 7 docs (no gaming/Apple coverage) | 9 docs — added gaming hardware (Xbox, PlayStation, Nintendo Switch) and Apple/computing devices (iPad, iPhone, MacBook, Surface) |
+| `WARN_THRESHOLD` | 0.35 | 0.40 |
+| CSV row sampling (`nrows`) | 5 | 50 (negligible speed impact; captures more unique item names) |
+
+**Observed result after fix:**
+
+| Input | Item similarity | Boundary similarity | Decision |
+|-------|----------------|-------------------|----------|
+| `sales_dummy.csv` (Xbox, PlayStation, …) | 0.34 | 0.64 (Apple/computing boundary) | `rejected` |
+
+The boundary flag now fires correctly: the dummy items match the new Apple/computing boundary document (0.64) far more closely than any coffee-shop item profile (0.34), triggering the hard-reject path.
+
+**No change to pipeline behavior** — `warning` status still allows the pipeline to proceed; only `rejected` blocks execution.
+
+---
+

@@ -7,36 +7,36 @@ STOCK-OUT RISK RANKING  (weather-augmented model, soonest first)
 --------------------------------------------------------------------
   #   Item            On-hand   Days left  Status
 --------------------------------------------------------------------
-  1   Americano            87           4  ** ALERT **
-  2   Latte               296           7  * Caution *
+  1   Xbox                 87           4  ** ALERT **
+  2   Iphone              296           7  * Caution *
   3   Sandwich            106           7  * Caution *
-  4   Espresso            246           8  * Caution *
+  4   Ipad                246           8  * Caution *
   5   Croissant           131           8  * Caution *
-  6   Cappuccino          258           9  * Caution *
-  7   Muffin              143          11    OK
-  8   Green Tea           156          12    OK
+  6   MacBook             258           9  * Caution *
+  7   Surface             143          11    OK
+  8   PlayStation         156          12    OK
 --------------------------------------------------------------------
 
 SUMMARY
 --------------------------------------------------------------------
-  ALERT   (≤5 days):   Americano
+  ALERT   (≤5 days):   Xbox
           → Reorder immediately to avoid stock-out.
-  Caution (6–10 days): Latte, Sandwich, Espresso, Croissant, Cappuccino
+  Caution (6–10 days): Iphone, Sandwich, Ipad, Croissant, MacBook
           → Schedule reorder within the next few days.
-  OK      (>10 days):  Muffin, Green Tea
+  OK      (>10 days):  Surface, PlayStation
 
 FORECAST DETAIL  (avg daily demand, weather model)
 --------------------------------------------------------------------
   Item             Avg demand/day  Days until stock-out
   --------------  ---------------  --------------------
-  Americano                  21.5                     4
-  Latte                      47.4                     7
+  Xbox                       21.5                     4
+  Iphone                     47.4                     7
   Sandwich                   16.3                     7
-  Espresso                   32.1                     8
+  Ipad                       32.1                     8
   Croissant                  16.4                     8
-  Cappuccino                 28.5                     9
-  Muffin                     13.8                    11
-  Green Tea                  13.4                    12
+  MacBook                    28.5                     9
+  Surface                    13.8                    11
+  PlayStation                13.4                    12
 
 ====================================================================
   Figures saved to output/figures/

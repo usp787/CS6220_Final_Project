@@ -230,10 +230,24 @@ async def forecast(
     data_dir = BASE_DIR / "data"
     data_dir.mkdir(exist_ok=True)
 
-    # Save sales files — preserve original filenames so glob in step1 picks them up
+    # Read all sales file bytes upfront — UploadFile streams can only be read once.
+    sales_data: List[tuple] = []
     for upload in sales_files:
         content = await upload.read()
-        fname = upload.filename or "sales_upload.csv"
+        sales_data.append((upload.filename or "sales_upload.csv", content))
+
+    # RAG validation gate — mirrors /validate so the pipeline cannot be bypassed
+    # by posting directly to /forecast without going through the validate endpoint.
+    for fname, content in sales_data:
+        rag_result = validate_sales_csv(content, filename=fname)
+        if rag_result["status"] == "rejected":
+            raise HTTPException(
+                status_code=422,
+                detail=f"RAG validation rejected '{fname}': {rag_result['message']}",
+            )
+
+    # Save sales files — preserve original filenames so glob in step1 picks them up
+    for fname, content in sales_data:
         (data_dir / fname).write_bytes(content)
 
     # Save stock snapshot under the fixed name expected by step2 and step6

@@ -39,6 +39,7 @@ Usage
 
 import io
 import threading
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
@@ -46,7 +47,7 @@ import pandas as pd
 
 # ── Thresholds ────────────────────────────────────────────────────────────────
 ACCEPT_THRESHOLD = 0.60
-WARN_THRESHOLD   = 0.35
+WARN_THRESHOLD   = 0.40
 
 # ── Document corpus ───────────────────────────────────────────────────────────
 CAT_ITEM     = "item_profile"
@@ -89,6 +90,12 @@ _DOCUMENTS: List[Tuple[str, str]] = [
                    "SKU, wholesale_price, supplier_id. Non-food, non-beverage industrial domain."),
     (CAT_BOUNDARY, "Electronics store catalog: products laptop, smartphone, tablet, "
                    "HDMI cable, charger, USB hub. Consumer electronics, not food service."),
+    (CAT_BOUNDARY, "Gaming and consumer electronics retail: products Xbox, PlayStation, "
+                   "Nintendo Switch, gaming headset, controller, gaming monitor. "
+                   "Video game hardware, not food or beverage."),
+    (CAT_BOUNDARY, "Apple and computing devices retail: products iPad, iPhone, MacBook, "
+                   "Surface, Apple Watch, AirPods. Personal computing devices, "
+                   "not food service inventory."),
     (CAT_BOUNDARY, "IoT sensor log: columns timestamp, sensor_id, temperature_reading, "
                    "pressure_value, humidity_percent, device_status. Machine telemetry, not sales."),
     (CAT_BOUNDARY, "Financial ledger: columns account_number, debit, credit, balance, "
@@ -106,6 +113,32 @@ _lock       = threading.Lock()
 _collection: Optional[Any]  = None          # chromadb Collection
 _ef:         Optional[Any]  = None          # embedding function (kept for querying)
 _init_error: Optional[str]  = None          # set if initialisation failed
+
+
+def _resolve_embedding_model_path() -> str:
+    """
+    Prefer a locally cached Hugging Face snapshot of all-MiniLM-L6-v2.
+
+    Loading by model name can trigger a metadata request to Hugging Face even
+    when the model is already cached, which breaks in offline or restricted
+    network environments. If a cached snapshot exists, return its filesystem
+    path so SentenceTransformer loads purely from local files.
+    """
+    cache_root = (
+        Path.home()
+        / ".cache"
+        / "huggingface"
+        / "hub"
+        / "models--sentence-transformers--all-MiniLM-L6-v2"
+        / "snapshots"
+    )
+    if cache_root.exists():
+        snapshots = sorted(p for p in cache_root.iterdir() if p.is_dir())
+        if snapshots:
+            return str(snapshots[-1])
+
+    # Fallback to the hub model name if no local snapshot is available.
+    return "all-MiniLM-L6-v2"
 
 
 def _build_store() -> None:
@@ -129,8 +162,9 @@ def _build_store() -> None:
         return
 
     try:
+        model_ref = _resolve_embedding_model_path()
         _ef = SentenceTransformerEmbeddingFunction(
-            model_name="all-MiniLM-L6-v2",
+            model_name=model_ref,
             device="cpu",
         )
 
@@ -227,7 +261,7 @@ def validate_sales_csv(
     """
     # ── Parse CSV ─────────────────────────────────────────────────────────────
     try:
-        df = pd.read_csv(io.BytesIO(content), nrows=5)
+        df = pd.read_csv(io.BytesIO(content), nrows=50)
     except Exception as exc:
         return {
             "status":     "rejected",
@@ -309,21 +343,24 @@ def validate_sales_csv(
             f"Best item match: \"{top_item_doc[:80]}…\""
         )
 
-    elif top_sim >= WARN_THRESHOLD or boundary_flag:
-        status = "warning"
-        if boundary_flag:
-            message = (
-                f"Domain mismatch — item content most closely matches an out-of-scope "
-                f"document (similarity {boundary_sim:.2f}): \"{boundary_doc[:80]}…\". "
-                f"Best coffee-shop item similarity: {top_item_sim:.2f}. "
-                "Proceed only if data is genuinely coffee-shop sales."
-            )
-        else:
-            message = (
-                f"Low item-domain similarity ({top_item_sim:.2f} < {ACCEPT_THRESHOLD}). "
-                f"Best match: \"{top_item_doc[:80]}…\". "
-                "Item names may not belong to the trained coffee-shop domain."
-            )
+    elif boundary_flag:
+        # Best global match is an out-of-scope document — hard reject regardless of
+        # item similarity score, because the boundary check is a stronger signal.
+        status  = "rejected"
+        message = (
+            f"Domain mismatch — item content most closely matches an out-of-scope "
+            f"document (similarity {boundary_sim:.2f}): \"{boundary_doc[:80]}…\". "
+            f"Best coffee-shop item similarity: {top_item_sim:.2f}. "
+            "Upload is outside the trained coffee-shop domain and has been blocked."
+        )
+
+    elif top_sim >= WARN_THRESHOLD:
+        status  = "warning"
+        message = (
+            f"Low item-domain similarity ({top_item_sim:.2f} < {ACCEPT_THRESHOLD}). "
+            f"Best match: \"{top_item_doc[:80]}…\". "
+            "Item names may not belong to the trained coffee-shop domain."
+        )
 
     else:
         status  = "rejected"
