@@ -11,7 +11,8 @@ from pathlib import Path
 Path("data").mkdir(exist_ok=True)
 
 # ── Load all monthly sales CSVs ───────────────────────────────────────────────
-csv_files = sorted(glob.glob("data/sales_*.csv"))
+# Match only sales_<month>_<year>.csv; exclude test files like sales_dummy.csv
+csv_files = sorted(glob.glob("data/sales_*_[0-9][0-9][0-9][0-9].csv"))
 if not csv_files:
     raise FileNotFoundError("No sales CSV files found in data/. Run generate_data.py first.")
 

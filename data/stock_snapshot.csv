@@ -1,9 +1,9 @@
 item_id,item_name,current_stock,snapshot_date
-I001,Ipad,246,2026/3/28
-I002,Iphone,296,2026/3/28
-I003,MacBook,258,2026/3/28
-I004,Xbox,87,2026/3/28
-I005,PlayStation,156,2026/3/28
-I006,Surface,143,2026/3/28
-I007,Croissant,131,2026/3/28
-I008,Sandwich,106,2026/3/28
+I001,Espresso,246,2026-03-28
+I002,Latte,296,2026-03-28
+I003,Cappuccino,258,2026-03-28
+I004,Americano,87,2026-03-28
+I005,Green Tea,156,2026-03-28
+I006,Muffin,143,2026-03-28
+I007,Croissant,131,2026-03-28
+I008,Sandwich,106,2026-03-28

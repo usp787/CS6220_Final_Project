@@ -60,67 +60,36 @@ date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,con
 2024-02-28,I001,Espresso,21,4.1,-1.4,6.6,0.0,Clear,synthetic
 2024-02-29,I001,Espresso,17,6.1,3.0,10.4,1.4,Cloudy,synthetic
 2024-03-01,I001,Espresso,13,2.2,-1.5,5.8,0.0,Clear,synthetic
-2024-03-01,I001,Xbox,13,2.2,-1.5,5.8,0.0,Clear,synthetic
 2024-03-02,I001,Espresso,25,3.2,-1.6,8.1,0.4,Cloudy,synthetic
-2024-03-02,I001,Xbox,25,3.2,-1.6,8.1,0.4,Cloudy,synthetic
 2024-03-03,I001,Espresso,10,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
-2024-03-03,I001,Xbox,10,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
 2024-03-04,I001,Espresso,14,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
-2024-03-04,I001,Xbox,14,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
 2024-03-05,I001,Espresso,21,6.6,1.7,10.5,0.0,Clear,synthetic
-2024-03-05,I001,Xbox,21,6.6,1.7,10.5,0.0,Clear,synthetic
 2024-03-06,I001,Espresso,28,8.3,5.1,12.8,0.0,Cloudy,synthetic
-2024-03-06,I001,Xbox,28,8.3,5.1,12.8,0.0,Cloudy,synthetic
 2024-03-07,I001,Espresso,16,4.5,1.4,7.2,0.0,Cloudy,synthetic
-2024-03-07,I001,Xbox,16,4.5,1.4,7.2,0.0,Cloudy,synthetic
 2024-03-08,I001,Espresso,21,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
-2024-03-08,I001,Xbox,21,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
 2024-03-09,I001,Espresso,26,6.2,1.9,10.3,0.0,Cloudy,synthetic
-2024-03-09,I001,Xbox,26,6.2,1.9,10.3,0.0,Cloudy,synthetic
 2024-03-10,I001,Espresso,14,3.5,-0.7,7.7,0.0,Cloudy,synthetic
-2024-03-10,I001,Xbox,14,3.5,-0.7,7.7,0.0,Cloudy,synthetic
 2024-03-11,I001,Espresso,18,6.6,3.8,10.9,0.0,Cloudy,synthetic
-2024-03-11,I001,Xbox,18,6.6,3.8,10.9,0.0,Cloudy,synthetic
 2024-03-12,I001,Espresso,22,10.1,4.9,14.6,0.0,Cloudy,synthetic
-2024-03-12,I001,Xbox,22,10.1,4.9,14.6,0.0,Cloudy,synthetic
 2024-03-13,I001,Espresso,20,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
-2024-03-13,I001,Xbox,20,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
 2024-03-14,I001,Espresso,26,10.6,7.7,13.9,0.0,Clear,synthetic
-2024-03-14,I001,Xbox,26,10.6,7.7,13.9,0.0,Clear,synthetic
 2024-03-15,I001,Espresso,6,-0.9,-6.1,4.1,0.0,Clear,synthetic
-2024-03-15,I001,Xbox,6,-0.9,-6.1,4.1,0.0,Clear,synthetic
 2024-03-16,I001,Espresso,30,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
-2024-03-16,I001,Xbox,30,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
 2024-03-17,I001,Espresso,28,7.1,2.0,9.8,0.0,Cloudy,synthetic
-2024-03-17,I001,Xbox,28,7.1,2.0,9.8,0.0,Cloudy,synthetic
 2024-03-18,I001,Espresso,26,6.2,1.3,8.9,0.0,Clear,synthetic
-2024-03-18,I001,Xbox,26,6.2,1.3,8.9,0.0,Clear,synthetic
 2024-03-19,I001,Espresso,21,7.5,3.1,11.0,0.0,Cloudy,synthetic
-2024-03-19,I001,Xbox,21,7.5,3.1,11.0,0.0,Cloudy,synthetic
 2024-03-20,I001,Espresso,13,1.9,-2.2,6.8,1.0,Clear,synthetic
-2024-03-20,I001,Xbox,13,1.9,-2.2,6.8,1.0,Clear,synthetic
 2024-03-21,I001,Espresso,16,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
-2024-03-21,I001,Xbox,16,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
 2024-03-22,I001,Espresso,28,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
-2024-03-22,I001,Xbox,28,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
 2024-03-23,I001,Espresso,40,12.3,8.7,16.3,0.0,Cloudy,synthetic
-2024-03-23,I001,Xbox,40,12.3,8.7,16.3,0.0,Cloudy,synthetic
 2024-03-24,I001,Espresso,23,6.9,3.7,10.8,0.0,Cloudy,synthetic
-2024-03-24,I001,Xbox,23,6.9,3.7,10.8,0.0,Cloudy,synthetic
 2024-03-25,I001,Espresso,23,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
-2024-03-25,I001,Xbox,23,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
 2024-03-26,I001,Espresso,26,7.4,3.4,10.9,0.0,Clear,synthetic
-2024-03-26,I001,Xbox,26,7.4,3.4,10.9,0.0,Clear,synthetic
 2024-03-27,I001,Espresso,21,11.6,8.9,15.4,0.0,Clear,synthetic
-2024-03-27,I001,Xbox,21,11.6,8.9,15.4,0.0,Clear,synthetic
 2024-03-28,I001,Espresso,25,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
-2024-03-28,I001,Xbox,25,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
 2024-03-29,I001,Espresso,22,8.0,3.5,11.2,0.0,Clear,synthetic
-2024-03-29,I001,Xbox,22,8.0,3.5,11.2,0.0,Clear,synthetic
 2024-03-30,I001,Espresso,33,11.2,8.4,15.5,0.0,Clear,synthetic
-2024-03-30,I001,Xbox,33,11.2,8.4,15.5,0.0,Clear,synthetic
 2024-03-31,I001,Espresso,36,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
-2024-03-31,I001,Xbox,36,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
 2024-04-01,I001,Espresso,38,12.9,8.9,18.4,0.6,Clear,synthetic
 2024-04-02,I001,Espresso,23,8.4,4.5,13.7,0.0,Cloudy,synthetic
 2024-04-03,I001,Espresso,31,9.7,5.4,14.1,0.0,Cloudy,synthetic
@@ -908,67 +877,36 @@ date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,con
 2024-02-28,I002,Latte,22,4.1,-1.4,6.6,0.0,Clear,synthetic
 2024-02-29,I002,Latte,31,6.1,3.0,10.4,1.4,Cloudy,synthetic
 2024-03-01,I002,Latte,25,2.2,-1.5,5.8,0.0,Clear,synthetic
-2024-03-01,I002,PlayStation,25,2.2,-1.5,5.8,0.0,Clear,synthetic
 2024-03-02,I002,Latte,29,3.2,-1.6,8.1,0.4,Cloudy,synthetic
-2024-03-02,I002,PlayStation,29,3.2,-1.6,8.1,0.4,Cloudy,synthetic
 2024-03-03,I002,Latte,23,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
-2024-03-03,I002,PlayStation,23,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
 2024-03-04,I002,Latte,12,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
-2024-03-04,I002,PlayStation,12,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
 2024-03-05,I002,Latte,27,6.6,1.7,10.5,0.0,Clear,synthetic
-2024-03-05,I002,PlayStation,27,6.6,1.7,10.5,0.0,Clear,synthetic
 2024-03-06,I002,Latte,36,8.3,5.1,12.8,0.0,Cloudy,synthetic
-2024-03-06,I002,PlayStation,36,8.3,5.1,12.8,0.0,Cloudy,synthetic
 2024-03-07,I002,Latte,21,4.5,1.4,7.2,0.0,Cloudy,synthetic
-2024-03-07,I002,PlayStation,21,4.5,1.4,7.2,0.0,Cloudy,synthetic
 2024-03-08,I002,Latte,33,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
-2024-03-08,I002,PlayStation,33,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
 2024-03-09,I002,Latte,38,6.2,1.9,10.3,0.0,Cloudy,synthetic
-2024-03-09,I002,PlayStation,38,6.2,1.9,10.3,0.0,Cloudy,synthetic
 2024-03-10,I002,Latte,25,3.5,-0.7,7.7,0.0,Cloudy,synthetic
-2024-03-10,I002,PlayStation,25,3.5,-0.7,7.7,0.0,Cloudy,synthetic
 2024-03-11,I002,Latte,37,6.6,3.8,10.9,0.0,Cloudy,synthetic
-2024-03-11,I002,PlayStation,37,6.6,3.8,10.9,0.0,Cloudy,synthetic
 2024-03-12,I002,Latte,40,10.1,4.9,14.6,0.0,Cloudy,synthetic
-2024-03-12,I002,PlayStation,40,10.1,4.9,14.6,0.0,Cloudy,synthetic
 2024-03-13,I002,Latte,31,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
-2024-03-13,I002,PlayStation,31,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
 2024-03-14,I002,Latte,35,10.6,7.7,13.9,0.0,Clear,synthetic
-2024-03-14,I002,PlayStation,35,10.6,7.7,13.9,0.0,Clear,synthetic
 2024-03-15,I002,Latte,11,-0.9,-6.1,4.1,0.0,Clear,synthetic
-2024-03-15,I002,PlayStation,11,-0.9,-6.1,4.1,0.0,Clear,synthetic
 2024-03-16,I002,Latte,42,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
-2024-03-16,I002,PlayStation,42,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
 2024-03-17,I002,Latte,47,7.1,2.0,9.8,0.0,Cloudy,synthetic
-2024-03-17,I002,PlayStation,47,7.1,2.0,9.8,0.0,Cloudy,synthetic
 2024-03-18,I002,Latte,32,6.2,1.3,8.9,0.0,Clear,synthetic
-2024-03-18,I002,PlayStation,32,6.2,1.3,8.9,0.0,Clear,synthetic
 2024-03-19,I002,Latte,34,7.5,3.1,11.0,0.0,Cloudy,synthetic
-2024-03-19,I002,PlayStation,34,7.5,3.1,11.0,0.0,Cloudy,synthetic
 2024-03-20,I002,Latte,22,1.9,-2.2,6.8,1.0,Clear,synthetic
-2024-03-20,I002,PlayStation,22,1.9,-2.2,6.8,1.0,Clear,synthetic
 2024-03-21,I002,Latte,29,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
-2024-03-21,I002,PlayStation,29,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
 2024-03-22,I002,Latte,39,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
-2024-03-22,I002,PlayStation,39,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
 2024-03-23,I002,Latte,66,12.3,8.7,16.3,0.0,Cloudy,synthetic
-2024-03-23,I002,PlayStation,66,12.3,8.7,16.3,0.0,Cloudy,synthetic
 2024-03-24,I002,Latte,38,6.9,3.7,10.8,0.0,Cloudy,synthetic
-2024-03-24,I002,PlayStation,38,6.9,3.7,10.8,0.0,Cloudy,synthetic
 2024-03-25,I002,Latte,28,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
-2024-03-25,I002,PlayStation,28,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
 2024-03-26,I002,Latte,35,7.4,3.4,10.9,0.0,Clear,synthetic
-2024-03-26,I002,PlayStation,35,7.4,3.4,10.9,0.0,Clear,synthetic
 2024-03-27,I002,Latte,49,11.6,8.9,15.4,0.0,Clear,synthetic
-2024-03-27,I002,PlayStation,49,11.6,8.9,15.4,0.0,Clear,synthetic
 2024-03-28,I002,Latte,42,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
-2024-03-28,I002,PlayStation,42,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
 2024-03-29,I002,Latte,37,8.0,3.5,11.2,0.0,Clear,synthetic
-2024-03-29,I002,PlayStation,37,8.0,3.5,11.2,0.0,Clear,synthetic
 2024-03-30,I002,Latte,59,11.2,8.4,15.5,0.0,Clear,synthetic
-2024-03-30,I002,PlayStation,59,11.2,8.4,15.5,0.0,Clear,synthetic
 2024-03-31,I002,Latte,55,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
-2024-03-31,I002,PlayStation,55,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
 2024-04-01,I002,Latte,55,12.9,8.9,18.4,0.6,Clear,synthetic
 2024-04-02,I002,Latte,41,8.4,4.5,13.7,0.0,Cloudy,synthetic
 2024-04-03,I002,Latte,44,9.7,5.4,14.1,0.0,Cloudy,synthetic
@@ -1756,67 +1694,36 @@ date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,con
 2024-02-28,I003,Cappuccino,17,4.1,-1.4,6.6,0.0,Clear,synthetic
 2024-02-29,I003,Cappuccino,20,6.1,3.0,10.4,1.4,Cloudy,synthetic
 2024-03-01,I003,Cappuccino,13,2.2,-1.5,5.8,0.0,Clear,synthetic
-2024-03-01,I003,MacBook,13,2.2,-1.5,5.8,0.0,Clear,synthetic
 2024-03-02,I003,Cappuccino,16,3.2,-1.6,8.1,0.4,Cloudy,synthetic
-2024-03-02,I003,MacBook,16,3.2,-1.6,8.1,0.4,Cloudy,synthetic
 2024-03-03,I003,Cappuccino,13,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
-2024-03-03,I003,MacBook,13,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
 2024-03-04,I003,Cappuccino,14,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
-2024-03-04,I003,MacBook,14,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
 2024-03-05,I003,Cappuccino,20,6.6,1.7,10.5,0.0,Clear,synthetic
-2024-03-05,I003,MacBook,20,6.6,1.7,10.5,0.0,Clear,synthetic
 2024-03-06,I003,Cappuccino,28,8.3,5.1,12.8,0.0,Cloudy,synthetic
-2024-03-06,I003,MacBook,28,8.3,5.1,12.8,0.0,Cloudy,synthetic
 2024-03-07,I003,Cappuccino,16,4.5,1.4,7.2,0.0,Cloudy,synthetic
-2024-03-07,I003,MacBook,16,4.5,1.4,7.2,0.0,Cloudy,synthetic
 2024-03-08,I003,Cappuccino,16,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
-2024-03-08,I003,MacBook,16,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
 2024-03-09,I003,Cappuccino,26,6.2,1.9,10.3,0.0,Cloudy,synthetic
-2024-03-09,I003,MacBook,26,6.2,1.9,10.3,0.0,Cloudy,synthetic
 2024-03-10,I003,Cappuccino,17,3.5,-0.7,7.7,0.0,Cloudy,synthetic
-2024-03-10,I003,MacBook,17,3.5,-0.7,7.7,0.0,Cloudy,synthetic
 2024-03-11,I003,Cappuccino,20,6.6,3.8,10.9,0.0,Cloudy,synthetic
-2024-03-11,I003,MacBook,20,6.6,3.8,10.9,0.0,Cloudy,synthetic
 2024-03-12,I003,Cappuccino,26,10.1,4.9,14.6,0.0,Cloudy,synthetic
-2024-03-12,I003,MacBook,26,10.1,4.9,14.6,0.0,Cloudy,synthetic
 2024-03-13,I003,Cappuccino,26,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
-2024-03-13,I003,MacBook,26,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
 2024-03-14,I003,Cappuccino,21,10.6,7.7,13.9,0.0,Clear,synthetic
-2024-03-14,I003,MacBook,21,10.6,7.7,13.9,0.0,Clear,synthetic
 2024-03-15,I003,Cappuccino,7,-0.9,-6.1,4.1,0.0,Clear,synthetic
-2024-03-15,I003,MacBook,7,-0.9,-6.1,4.1,0.0,Clear,synthetic
 2024-03-16,I003,Cappuccino,25,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
-2024-03-16,I003,MacBook,25,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
 2024-03-17,I003,Cappuccino,25,7.1,2.0,9.8,0.0,Cloudy,synthetic
-2024-03-17,I003,MacBook,25,7.1,2.0,9.8,0.0,Cloudy,synthetic
 2024-03-18,I003,Cappuccino,18,6.2,1.3,8.9,0.0,Clear,synthetic
-2024-03-18,I003,MacBook,18,6.2,1.3,8.9,0.0,Clear,synthetic
 2024-03-19,I003,Cappuccino,26,7.5,3.1,11.0,0.0,Cloudy,synthetic
-2024-03-19,I003,MacBook,26,7.5,3.1,11.0,0.0,Cloudy,synthetic
 2024-03-20,I003,Cappuccino,21,1.9,-2.2,6.8,1.0,Clear,synthetic
-2024-03-20,I003,MacBook,21,1.9,-2.2,6.8,1.0,Clear,synthetic
 2024-03-21,I003,Cappuccino,25,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
-2024-03-21,I003,MacBook,25,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
 2024-03-22,I003,Cappuccino,22,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
-2024-03-22,I003,MacBook,22,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
 2024-03-23,I003,Cappuccino,34,12.3,8.7,16.3,0.0,Cloudy,synthetic
-2024-03-23,I003,MacBook,34,12.3,8.7,16.3,0.0,Cloudy,synthetic
 2024-03-24,I003,Cappuccino,18,6.9,3.7,10.8,0.0,Cloudy,synthetic
-2024-03-24,I003,MacBook,18,6.9,3.7,10.8,0.0,Cloudy,synthetic
 2024-03-25,I003,Cappuccino,20,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
-2024-03-25,I003,MacBook,20,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
 2024-03-26,I003,Cappuccino,26,7.4,3.4,10.9,0.0,Clear,synthetic
-2024-03-26,I003,MacBook,26,7.4,3.4,10.9,0.0,Clear,synthetic
 2024-03-27,I003,Cappuccino,21,11.6,8.9,15.4,0.0,Clear,synthetic
-2024-03-27,I003,MacBook,21,11.6,8.9,15.4,0.0,Clear,synthetic
 2024-03-28,I003,Cappuccino,35,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
-2024-03-28,I003,MacBook,35,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
 2024-03-29,I003,Cappuccino,26,8.0,3.5,11.2,0.0,Clear,synthetic
-2024-03-29,I003,MacBook,26,8.0,3.5,11.2,0.0,Clear,synthetic
 2024-03-30,I003,Cappuccino,39,11.2,8.4,15.5,0.0,Clear,synthetic
-2024-03-30,I003,MacBook,39,11.2,8.4,15.5,0.0,Clear,synthetic
 2024-03-31,I003,Cappuccino,27,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
-2024-03-31,I003,MacBook,27,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
 2024-04-01,I003,Cappuccino,31,12.9,8.9,18.4,0.6,Clear,synthetic
 2024-04-02,I003,Cappuccino,17,8.4,4.5,13.7,0.0,Cloudy,synthetic
 2024-04-03,I003,Cappuccino,26,9.7,5.4,14.1,0.0,Cloudy,synthetic
@@ -2604,67 +2511,36 @@ date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,con
 2024-02-28,I004,Americano,9,4.1,-1.4,6.6,0.0,Clear,synthetic
 2024-02-29,I004,Americano,17,6.1,3.0,10.4,1.4,Cloudy,synthetic
 2024-03-01,I004,Americano,10,2.2,-1.5,5.8,0.0,Clear,synthetic
-2024-03-01,I004,Surface,10,2.2,-1.5,5.8,0.0,Clear,synthetic
 2024-03-02,I004,Americano,15,3.2,-1.6,8.1,0.4,Cloudy,synthetic
-2024-03-02,I004,Surface,15,3.2,-1.6,8.1,0.4,Cloudy,synthetic
 2024-03-03,I004,Americano,19,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
-2024-03-03,I004,Surface,19,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
 2024-03-04,I004,Americano,18,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
-2024-03-04,I004,Surface,18,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
 2024-03-05,I004,Americano,20,6.6,1.7,10.5,0.0,Clear,synthetic
-2024-03-05,I004,Surface,20,6.6,1.7,10.5,0.0,Clear,synthetic
 2024-03-06,I004,Americano,23,8.3,5.1,12.8,0.0,Cloudy,synthetic
-2024-03-06,I004,Surface,23,8.3,5.1,12.8,0.0,Cloudy,synthetic
 2024-03-07,I004,Americano,12,4.5,1.4,7.2,0.0,Cloudy,synthetic
-2024-03-07,I004,Surface,12,4.5,1.4,7.2,0.0,Cloudy,synthetic
 2024-03-08,I004,Americano,20,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
-2024-03-08,I004,Surface,20,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
 2024-03-09,I004,Americano,23,6.2,1.9,10.3,0.0,Cloudy,synthetic
-2024-03-09,I004,Surface,23,6.2,1.9,10.3,0.0,Cloudy,synthetic
 2024-03-10,I004,Americano,19,3.5,-0.7,7.7,0.0,Cloudy,synthetic
-2024-03-10,I004,Surface,19,3.5,-0.7,7.7,0.0,Cloudy,synthetic
 2024-03-11,I004,Americano,17,6.6,3.8,10.9,0.0,Cloudy,synthetic
-2024-03-11,I004,Surface,17,6.6,3.8,10.9,0.0,Cloudy,synthetic
 2024-03-12,I004,Americano,14,10.1,4.9,14.6,0.0,Cloudy,synthetic
-2024-03-12,I004,Surface,14,10.1,4.9,14.6,0.0,Cloudy,synthetic
 2024-03-13,I004,Americano,19,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
-2024-03-13,I004,Surface,19,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
 2024-03-14,I004,Americano,18,10.6,7.7,13.9,0.0,Clear,synthetic
-2024-03-14,I004,Surface,18,10.6,7.7,13.9,0.0,Clear,synthetic
 2024-03-15,I004,Americano,13,-0.9,-6.1,4.1,0.0,Clear,synthetic
-2024-03-15,I004,Surface,13,-0.9,-6.1,4.1,0.0,Clear,synthetic
 2024-03-16,I004,Americano,24,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
-2024-03-16,I004,Surface,24,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
 2024-03-17,I004,Americano,19,7.1,2.0,9.8,0.0,Cloudy,synthetic
-2024-03-17,I004,Surface,19,7.1,2.0,9.8,0.0,Cloudy,synthetic
 2024-03-18,I004,Americano,15,6.2,1.3,8.9,0.0,Clear,synthetic
-2024-03-18,I004,Surface,15,6.2,1.3,8.9,0.0,Clear,synthetic
 2024-03-19,I004,Americano,10,7.5,3.1,11.0,0.0,Cloudy,synthetic
-2024-03-19,I004,Surface,10,7.5,3.1,11.0,0.0,Cloudy,synthetic
 2024-03-20,I004,Americano,10,1.9,-2.2,6.8,1.0,Clear,synthetic
-2024-03-20,I004,Surface,10,1.9,-2.2,6.8,1.0,Clear,synthetic
 2024-03-21,I004,Americano,15,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
-2024-03-21,I004,Surface,15,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
 2024-03-22,I004,Americano,19,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
-2024-03-22,I004,Surface,19,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
 2024-03-23,I004,Americano,29,12.3,8.7,16.3,0.0,Cloudy,synthetic
-2024-03-23,I004,Surface,29,12.3,8.7,16.3,0.0,Cloudy,synthetic
 2024-03-24,I004,Americano,22,6.9,3.7,10.8,0.0,Cloudy,synthetic
-2024-03-24,I004,Surface,22,6.9,3.7,10.8,0.0,Cloudy,synthetic
 2024-03-25,I004,Americano,18,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
-2024-03-25,I004,Surface,18,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
 2024-03-26,I004,Americano,12,7.4,3.4,10.9,0.0,Clear,synthetic
-2024-03-26,I004,Surface,12,7.4,3.4,10.9,0.0,Clear,synthetic
 2024-03-27,I004,Americano,23,11.6,8.9,15.4,0.0,Clear,synthetic
-2024-03-27,I004,Surface,23,11.6,8.9,15.4,0.0,Clear,synthetic
 2024-03-28,I004,Americano,18,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
-2024-03-28,I004,Surface,18,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
 2024-03-29,I004,Americano,17,8.0,3.5,11.2,0.0,Clear,synthetic
-2024-03-29,I004,Surface,17,8.0,3.5,11.2,0.0,Clear,synthetic
 2024-03-30,I004,Americano,23,11.2,8.4,15.5,0.0,Clear,synthetic
-2024-03-30,I004,Surface,23,11.2,8.4,15.5,0.0,Clear,synthetic
 2024-03-31,I004,Americano,25,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
-2024-03-31,I004,Surface,25,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
 2024-04-01,I004,Americano,23,12.9,8.9,18.4,0.6,Clear,synthetic
 2024-04-02,I004,Americano,20,8.4,4.5,13.7,0.0,Cloudy,synthetic
 2024-04-03,I004,Americano,16,9.7,5.4,14.1,0.0,Cloudy,synthetic
@@ -3452,67 +3328,36 @@ date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,con
 2024-02-28,I005,Green Tea,12,4.1,-1.4,6.6,0.0,Clear,synthetic
 2024-02-29,I005,Green Tea,11,6.1,3.0,10.4,1.4,Cloudy,synthetic
 2024-03-01,I005,Green Tea,13,2.2,-1.5,5.8,0.0,Clear,synthetic
-2024-03-01,I005,Iphone,13,2.2,-1.5,5.8,0.0,Clear,synthetic
 2024-03-02,I005,Green Tea,15,3.2,-1.6,8.1,0.4,Cloudy,synthetic
-2024-03-02,I005,Iphone,15,3.2,-1.6,8.1,0.4,Cloudy,synthetic
 2024-03-03,I005,Green Tea,9,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
-2024-03-03,I005,Iphone,9,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
 2024-03-04,I005,Green Tea,9,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
-2024-03-04,I005,Iphone,9,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
 2024-03-05,I005,Green Tea,12,6.6,1.7,10.5,0.0,Clear,synthetic
-2024-03-05,I005,Iphone,12,6.6,1.7,10.5,0.0,Clear,synthetic
 2024-03-06,I005,Green Tea,11,8.3,5.1,12.8,0.0,Cloudy,synthetic
-2024-03-06,I005,Iphone,11,8.3,5.1,12.8,0.0,Cloudy,synthetic
 2024-03-07,I005,Green Tea,5,4.5,1.4,7.2,0.0,Cloudy,synthetic
-2024-03-07,I005,Iphone,5,4.5,1.4,7.2,0.0,Cloudy,synthetic
 2024-03-08,I005,Green Tea,6,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
-2024-03-08,I005,Iphone,6,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
 2024-03-09,I005,Green Tea,18,6.2,1.9,10.3,0.0,Cloudy,synthetic
-2024-03-09,I005,Iphone,18,6.2,1.9,10.3,0.0,Cloudy,synthetic
 2024-03-10,I005,Green Tea,16,3.5,-0.7,7.7,0.0,Cloudy,synthetic
-2024-03-10,I005,Iphone,16,3.5,-0.7,7.7,0.0,Cloudy,synthetic
 2024-03-11,I005,Green Tea,16,6.6,3.8,10.9,0.0,Cloudy,synthetic
-2024-03-11,I005,Iphone,16,6.6,3.8,10.9,0.0,Cloudy,synthetic
 2024-03-12,I005,Green Tea,15,10.1,4.9,14.6,0.0,Cloudy,synthetic
-2024-03-12,I005,Iphone,15,10.1,4.9,14.6,0.0,Cloudy,synthetic
 2024-03-13,I005,Green Tea,9,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
-2024-03-13,I005,Iphone,9,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
 2024-03-14,I005,Green Tea,9,10.6,7.7,13.9,0.0,Clear,synthetic
-2024-03-14,I005,Iphone,9,10.6,7.7,13.9,0.0,Clear,synthetic
 2024-03-15,I005,Green Tea,12,-0.9,-6.1,4.1,0.0,Clear,synthetic
-2024-03-15,I005,Iphone,12,-0.9,-6.1,4.1,0.0,Clear,synthetic
 2024-03-16,I005,Green Tea,18,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
-2024-03-16,I005,Iphone,18,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
 2024-03-17,I005,Green Tea,9,7.1,2.0,9.8,0.0,Cloudy,synthetic
-2024-03-17,I005,Iphone,9,7.1,2.0,9.8,0.0,Cloudy,synthetic
 2024-03-18,I005,Green Tea,10,6.2,1.3,8.9,0.0,Clear,synthetic
-2024-03-18,I005,Iphone,10,6.2,1.3,8.9,0.0,Clear,synthetic
 2024-03-19,I005,Green Tea,8,7.5,3.1,11.0,0.0,Cloudy,synthetic
-2024-03-19,I005,Iphone,8,7.5,3.1,11.0,0.0,Cloudy,synthetic
 2024-03-20,I005,Green Tea,2,1.9,-2.2,6.8,1.0,Clear,synthetic
-2024-03-20,I005,Iphone,2,1.9,-2.2,6.8,1.0,Clear,synthetic
 2024-03-21,I005,Green Tea,10,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
-2024-03-21,I005,Iphone,10,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
 2024-03-22,I005,Green Tea,15,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
-2024-03-22,I005,Iphone,15,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
 2024-03-23,I005,Green Tea,17,12.3,8.7,16.3,0.0,Cloudy,synthetic
-2024-03-23,I005,Iphone,17,12.3,8.7,16.3,0.0,Cloudy,synthetic
 2024-03-24,I005,Green Tea,14,6.9,3.7,10.8,0.0,Cloudy,synthetic
-2024-03-24,I005,Iphone,14,6.9,3.7,10.8,0.0,Cloudy,synthetic
 2024-03-25,I005,Green Tea,7,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
-2024-03-25,I005,Iphone,7,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
 2024-03-26,I005,Green Tea,10,7.4,3.4,10.9,0.0,Clear,synthetic
-2024-03-26,I005,Iphone,10,7.4,3.4,10.9,0.0,Clear,synthetic
 2024-03-27,I005,Green Tea,12,11.6,8.9,15.4,0.0,Clear,synthetic
-2024-03-27,I005,Iphone,12,11.6,8.9,15.4,0.0,Clear,synthetic
 2024-03-28,I005,Green Tea,11,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
-2024-03-28,I005,Iphone,11,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
 2024-03-29,I005,Green Tea,17,8.0,3.5,11.2,0.0,Clear,synthetic
-2024-03-29,I005,Iphone,17,8.0,3.5,11.2,0.0,Clear,synthetic
 2024-03-30,I005,Green Tea,12,11.2,8.4,15.5,0.0,Clear,synthetic
-2024-03-30,I005,Iphone,12,11.2,8.4,15.5,0.0,Clear,synthetic
 2024-03-31,I005,Green Tea,14,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
-2024-03-31,I005,Iphone,14,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
 2024-04-01,I005,Green Tea,17,12.9,8.9,18.4,0.6,Clear,synthetic
 2024-04-02,I005,Green Tea,15,8.4,4.5,13.7,0.0,Cloudy,synthetic
 2024-04-03,I005,Green Tea,12,9.7,5.4,14.1,0.0,Cloudy,synthetic
@@ -4299,37 +4144,37 @@ date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,con
 2024-02-27,I006,Muffin,8,2.1,-3.2,6.7,0.0,Clear,synthetic
 2024-02-28,I006,Muffin,16,4.1,-1.4,6.6,0.0,Clear,synthetic
 2024-02-29,I006,Muffin,7,6.1,3.0,10.4,1.4,Cloudy,synthetic
-2024-03-01,I006,Muffin,26,2.2,-1.5,5.8,0.0,Clear,synthetic
-2024-03-02,I006,Muffin,28,3.2,-1.6,8.1,0.4,Cloudy,synthetic
-2024-03-03,I006,Muffin,24,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
-2024-03-04,I006,Muffin,26,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
-2024-03-05,I006,Muffin,20,6.6,1.7,10.5,0.0,Clear,synthetic
-2024-03-06,I006,Muffin,34,8.3,5.1,12.8,0.0,Cloudy,synthetic
-2024-03-07,I006,Muffin,26,4.5,1.4,7.2,0.0,Cloudy,synthetic
-2024-03-08,I006,Muffin,30,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
-2024-03-09,I006,Muffin,40,6.2,1.9,10.3,0.0,Cloudy,synthetic
-2024-03-10,I006,Muffin,34,3.5,-0.7,7.7,0.0,Cloudy,synthetic
-2024-03-11,I006,Muffin,22,6.6,3.8,10.9,0.0,Cloudy,synthetic
-2024-03-12,I006,Muffin,20,10.1,4.9,14.6,0.0,Cloudy,synthetic
-2024-03-13,I006,Muffin,16,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
-2024-03-14,I006,Muffin,20,10.6,7.7,13.9,0.0,Clear,synthetic
-2024-03-15,I006,Muffin,14,-0.9,-6.1,4.1,0.0,Clear,synthetic
-2024-03-16,I006,Muffin,34,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
-2024-03-17,I006,Muffin,16,7.1,2.0,9.8,0.0,Cloudy,synthetic
-2024-03-18,I006,Muffin,22,6.2,1.3,8.9,0.0,Clear,synthetic
-2024-03-19,I006,Muffin,38,7.5,3.1,11.0,0.0,Cloudy,synthetic
-2024-03-20,I006,Muffin,14,1.9,-2.2,6.8,1.0,Clear,synthetic
-2024-03-21,I006,Muffin,28,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
-2024-03-22,I006,Muffin,24,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
-2024-03-23,I006,Muffin,32,12.3,8.7,16.3,0.0,Cloudy,synthetic
-2024-03-24,I006,Muffin,38,6.9,3.7,10.8,0.0,Cloudy,synthetic
-2024-03-25,I006,Muffin,22,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
-2024-03-26,I006,Muffin,14,7.4,3.4,10.9,0.0,Clear,synthetic
-2024-03-27,I006,Muffin,26,11.6,8.9,15.4,0.0,Clear,synthetic
-2024-03-28,I006,Muffin,14,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
-2024-03-29,I006,Muffin,22,8.0,3.5,11.2,0.0,Clear,synthetic
-2024-03-30,I006,Muffin,40,11.2,8.4,15.5,0.0,Clear,synthetic
-2024-03-31,I006,Muffin,34,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
+2024-03-01,I006,Muffin,13,2.2,-1.5,5.8,0.0,Clear,synthetic
+2024-03-02,I006,Muffin,14,3.2,-1.6,8.1,0.4,Cloudy,synthetic
+2024-03-03,I006,Muffin,12,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
+2024-03-04,I006,Muffin,13,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
+2024-03-05,I006,Muffin,10,6.6,1.7,10.5,0.0,Clear,synthetic
+2024-03-06,I006,Muffin,17,8.3,5.1,12.8,0.0,Cloudy,synthetic
+2024-03-07,I006,Muffin,13,4.5,1.4,7.2,0.0,Cloudy,synthetic
+2024-03-08,I006,Muffin,15,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
+2024-03-09,I006,Muffin,20,6.2,1.9,10.3,0.0,Cloudy,synthetic
+2024-03-10,I006,Muffin,17,3.5,-0.7,7.7,0.0,Cloudy,synthetic
+2024-03-11,I006,Muffin,11,6.6,3.8,10.9,0.0,Cloudy,synthetic
+2024-03-12,I006,Muffin,10,10.1,4.9,14.6,0.0,Cloudy,synthetic
+2024-03-13,I006,Muffin,8,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
+2024-03-14,I006,Muffin,10,10.6,7.7,13.9,0.0,Clear,synthetic
+2024-03-15,I006,Muffin,7,-0.9,-6.1,4.1,0.0,Clear,synthetic
+2024-03-16,I006,Muffin,17,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
+2024-03-17,I006,Muffin,8,7.1,2.0,9.8,0.0,Cloudy,synthetic
+2024-03-18,I006,Muffin,11,6.2,1.3,8.9,0.0,Clear,synthetic
+2024-03-19,I006,Muffin,19,7.5,3.1,11.0,0.0,Cloudy,synthetic
+2024-03-20,I006,Muffin,7,1.9,-2.2,6.8,1.0,Clear,synthetic
+2024-03-21,I006,Muffin,14,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
+2024-03-22,I006,Muffin,12,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
+2024-03-23,I006,Muffin,16,12.3,8.7,16.3,0.0,Cloudy,synthetic
+2024-03-24,I006,Muffin,19,6.9,3.7,10.8,0.0,Cloudy,synthetic
+2024-03-25,I006,Muffin,11,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
+2024-03-26,I006,Muffin,7,7.4,3.4,10.9,0.0,Clear,synthetic
+2024-03-27,I006,Muffin,13,11.6,8.9,15.4,0.0,Clear,synthetic
+2024-03-28,I006,Muffin,7,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
+2024-03-29,I006,Muffin,11,8.0,3.5,11.2,0.0,Clear,synthetic
+2024-03-30,I006,Muffin,20,11.2,8.4,15.5,0.0,Clear,synthetic
+2024-03-31,I006,Muffin,17,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
 2024-04-01,I006,Muffin,9,12.9,8.9,18.4,0.6,Clear,synthetic
 2024-04-02,I006,Muffin,11,8.4,4.5,13.7,0.0,Cloudy,synthetic
 2024-04-03,I006,Muffin,14,9.7,5.4,14.1,0.0,Cloudy,synthetic
@@ -5117,67 +4962,36 @@ date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,con
 2024-02-28,I007,Croissant,18,4.1,-1.4,6.6,0.0,Clear,synthetic
 2024-02-29,I007,Croissant,20,6.1,3.0,10.4,1.4,Cloudy,synthetic
 2024-03-01,I007,Croissant,15,2.2,-1.5,5.8,0.0,Clear,synthetic
-2024-03-01,I007,Ipad,15,2.2,-1.5,5.8,0.0,Clear,synthetic
 2024-03-02,I007,Croissant,18,3.2,-1.6,8.1,0.4,Cloudy,synthetic
-2024-03-02,I007,Ipad,18,3.2,-1.6,8.1,0.4,Cloudy,synthetic
 2024-03-03,I007,Croissant,15,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
-2024-03-03,I007,Ipad,15,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
 2024-03-04,I007,Croissant,13,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
-2024-03-04,I007,Ipad,13,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
 2024-03-05,I007,Croissant,17,6.6,1.7,10.5,0.0,Clear,synthetic
-2024-03-05,I007,Ipad,17,6.6,1.7,10.5,0.0,Clear,synthetic
 2024-03-06,I007,Croissant,21,8.3,5.1,12.8,0.0,Cloudy,synthetic
-2024-03-06,I007,Ipad,21,8.3,5.1,12.8,0.0,Cloudy,synthetic
 2024-03-07,I007,Croissant,14,4.5,1.4,7.2,0.0,Cloudy,synthetic
-2024-03-07,I007,Ipad,14,4.5,1.4,7.2,0.0,Cloudy,synthetic
 2024-03-08,I007,Croissant,15,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
-2024-03-08,I007,Ipad,15,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
 2024-03-09,I007,Croissant,14,6.2,1.9,10.3,0.0,Cloudy,synthetic
-2024-03-09,I007,Ipad,14,6.2,1.9,10.3,0.0,Cloudy,synthetic
 2024-03-10,I007,Croissant,16,3.5,-0.7,7.7,0.0,Cloudy,synthetic
-2024-03-10,I007,Ipad,16,3.5,-0.7,7.7,0.0,Cloudy,synthetic
 2024-03-11,I007,Croissant,14,6.6,3.8,10.9,0.0,Cloudy,synthetic
-2024-03-11,I007,Ipad,14,6.6,3.8,10.9,0.0,Cloudy,synthetic
 2024-03-12,I007,Croissant,17,10.1,4.9,14.6,0.0,Cloudy,synthetic
-2024-03-12,I007,Ipad,17,10.1,4.9,14.6,0.0,Cloudy,synthetic
 2024-03-13,I007,Croissant,11,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
-2024-03-13,I007,Ipad,11,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
 2024-03-14,I007,Croissant,17,10.6,7.7,13.9,0.0,Clear,synthetic
-2024-03-14,I007,Ipad,17,10.6,7.7,13.9,0.0,Clear,synthetic
 2024-03-15,I007,Croissant,14,-0.9,-6.1,4.1,0.0,Clear,synthetic
-2024-03-15,I007,Ipad,14,-0.9,-6.1,4.1,0.0,Clear,synthetic
 2024-03-16,I007,Croissant,27,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
-2024-03-16,I007,Ipad,27,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
 2024-03-17,I007,Croissant,17,7.1,2.0,9.8,0.0,Cloudy,synthetic
-2024-03-17,I007,Ipad,17,7.1,2.0,9.8,0.0,Cloudy,synthetic
 2024-03-18,I007,Croissant,15,6.2,1.3,8.9,0.0,Clear,synthetic
-2024-03-18,I007,Ipad,15,6.2,1.3,8.9,0.0,Clear,synthetic
 2024-03-19,I007,Croissant,19,7.5,3.1,11.0,0.0,Cloudy,synthetic
-2024-03-19,I007,Ipad,19,7.5,3.1,11.0,0.0,Cloudy,synthetic
 2024-03-20,I007,Croissant,17,1.9,-2.2,6.8,1.0,Clear,synthetic
-2024-03-20,I007,Ipad,17,1.9,-2.2,6.8,1.0,Clear,synthetic
 2024-03-21,I007,Croissant,10,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
-2024-03-21,I007,Ipad,10,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
 2024-03-22,I007,Croissant,9,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
-2024-03-22,I007,Ipad,9,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
 2024-03-23,I007,Croissant,18,12.3,8.7,16.3,0.0,Cloudy,synthetic
-2024-03-23,I007,Ipad,18,12.3,8.7,16.3,0.0,Cloudy,synthetic
 2024-03-24,I007,Croissant,12,6.9,3.7,10.8,0.0,Cloudy,synthetic
-2024-03-24,I007,Ipad,12,6.9,3.7,10.8,0.0,Cloudy,synthetic
 2024-03-25,I007,Croissant,13,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
-2024-03-25,I007,Ipad,13,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
 2024-03-26,I007,Croissant,16,7.4,3.4,10.9,0.0,Clear,synthetic
-2024-03-26,I007,Ipad,16,7.4,3.4,10.9,0.0,Clear,synthetic
 2024-03-27,I007,Croissant,20,11.6,8.9,15.4,0.0,Clear,synthetic
-2024-03-27,I007,Ipad,20,11.6,8.9,15.4,0.0,Clear,synthetic
 2024-03-28,I007,Croissant,17,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
-2024-03-28,I007,Ipad,17,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
 2024-03-29,I007,Croissant,13,8.0,3.5,11.2,0.0,Clear,synthetic
-2024-03-29,I007,Ipad,13,8.0,3.5,11.2,0.0,Clear,synthetic
 2024-03-30,I007,Croissant,21,11.2,8.4,15.5,0.0,Clear,synthetic
-2024-03-30,I007,Ipad,21,11.2,8.4,15.5,0.0,Clear,synthetic
 2024-03-31,I007,Croissant,18,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
-2024-03-31,I007,Ipad,18,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
 2024-04-01,I007,Croissant,14,12.9,8.9,18.4,0.6,Clear,synthetic
 2024-04-02,I007,Croissant,18,8.4,4.5,13.7,0.0,Cloudy,synthetic
 2024-04-03,I007,Croissant,15,9.7,5.4,14.1,0.0,Cloudy,synthetic
@@ -5964,37 +5778,37 @@ date,item_id,item_name,daily_demand,temp_avg,temp_min,temp_max,precipitation,con
 2024-02-27,I008,Sandwich,21,2.1,-3.2,6.7,0.0,Clear,synthetic
 2024-02-28,I008,Sandwich,16,4.1,-1.4,6.6,0.0,Clear,synthetic
 2024-02-29,I008,Sandwich,16,6.1,3.0,10.4,1.4,Cloudy,synthetic
-2024-03-01,I008,Sandwich,44,2.2,-1.5,5.8,0.0,Clear,synthetic
-2024-03-02,I008,Sandwich,42,3.2,-1.6,8.1,0.4,Cloudy,synthetic
-2024-03-03,I008,Sandwich,46,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
-2024-03-04,I008,Sandwich,42,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
-2024-03-05,I008,Sandwich,34,6.6,1.7,10.5,0.0,Clear,synthetic
-2024-03-06,I008,Sandwich,34,8.3,5.1,12.8,0.0,Cloudy,synthetic
-2024-03-07,I008,Sandwich,28,4.5,1.4,7.2,0.0,Cloudy,synthetic
-2024-03-08,I008,Sandwich,34,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
-2024-03-09,I008,Sandwich,48,6.2,1.9,10.3,0.0,Cloudy,synthetic
-2024-03-10,I008,Sandwich,34,3.5,-0.7,7.7,0.0,Cloudy,synthetic
-2024-03-11,I008,Sandwich,30,6.6,3.8,10.9,0.0,Cloudy,synthetic
-2024-03-12,I008,Sandwich,26,10.1,4.9,14.6,0.0,Cloudy,synthetic
-2024-03-13,I008,Sandwich,30,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
-2024-03-14,I008,Sandwich,40,10.6,7.7,13.9,0.0,Clear,synthetic
-2024-03-15,I008,Sandwich,38,-0.9,-6.1,4.1,0.0,Clear,synthetic
-2024-03-16,I008,Sandwich,38,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
-2024-03-17,I008,Sandwich,30,7.1,2.0,9.8,0.0,Cloudy,synthetic
-2024-03-18,I008,Sandwich,30,6.2,1.3,8.9,0.0,Clear,synthetic
-2024-03-19,I008,Sandwich,22,7.5,3.1,11.0,0.0,Cloudy,synthetic
-2024-03-20,I008,Sandwich,24,1.9,-2.2,6.8,1.0,Clear,synthetic
-2024-03-21,I008,Sandwich,20,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
-2024-03-22,I008,Sandwich,26,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
-2024-03-23,I008,Sandwich,56,12.3,8.7,16.3,0.0,Cloudy,synthetic
-2024-03-24,I008,Sandwich,34,6.9,3.7,10.8,0.0,Cloudy,synthetic
-2024-03-25,I008,Sandwich,40,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
-2024-03-26,I008,Sandwich,34,7.4,3.4,10.9,0.0,Clear,synthetic
-2024-03-27,I008,Sandwich,34,11.6,8.9,15.4,0.0,Clear,synthetic
-2024-03-28,I008,Sandwich,26,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
-2024-03-29,I008,Sandwich,30,8.0,3.5,11.2,0.0,Clear,synthetic
-2024-03-30,I008,Sandwich,40,11.2,8.4,15.5,0.0,Clear,synthetic
-2024-03-31,I008,Sandwich,34,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
+2024-03-01,I008,Sandwich,22,2.2,-1.5,5.8,0.0,Clear,synthetic
+2024-03-02,I008,Sandwich,21,3.2,-1.6,8.1,0.4,Cloudy,synthetic
+2024-03-03,I008,Sandwich,23,0.8,-3.8,3.6,2.8,Light Rain/Snow,synthetic
+2024-03-04,I008,Sandwich,21,0.8,-2.2,5.0,1.6,Light Rain/Snow,synthetic
+2024-03-05,I008,Sandwich,17,6.6,1.7,10.5,0.0,Clear,synthetic
+2024-03-06,I008,Sandwich,17,8.3,5.1,12.8,0.0,Cloudy,synthetic
+2024-03-07,I008,Sandwich,14,4.5,1.4,7.2,0.0,Cloudy,synthetic
+2024-03-08,I008,Sandwich,17,7.7,3.6,12.0,2.8,Light Rain/Snow,synthetic
+2024-03-09,I008,Sandwich,24,6.2,1.9,10.3,0.0,Cloudy,synthetic
+2024-03-10,I008,Sandwich,17,3.5,-0.7,7.7,0.0,Cloudy,synthetic
+2024-03-11,I008,Sandwich,15,6.6,3.8,10.9,0.0,Cloudy,synthetic
+2024-03-12,I008,Sandwich,13,10.1,4.9,14.6,0.0,Cloudy,synthetic
+2024-03-13,I008,Sandwich,15,5.9,2.6,10.8,8.9,Heavy Rain/Snow,synthetic
+2024-03-14,I008,Sandwich,20,10.6,7.7,13.9,0.0,Clear,synthetic
+2024-03-15,I008,Sandwich,19,-0.9,-6.1,4.1,0.0,Clear,synthetic
+2024-03-16,I008,Sandwich,19,8.9,3.6,12.9,8.2,Heavy Rain/Snow,synthetic
+2024-03-17,I008,Sandwich,15,7.1,2.0,9.8,0.0,Cloudy,synthetic
+2024-03-18,I008,Sandwich,15,6.2,1.3,8.9,0.0,Clear,synthetic
+2024-03-19,I008,Sandwich,11,7.5,3.1,11.0,0.0,Cloudy,synthetic
+2024-03-20,I008,Sandwich,12,1.9,-2.2,6.8,1.0,Clear,synthetic
+2024-03-21,I008,Sandwich,10,7.1,4.3,11.7,3.0,Light Rain/Snow,synthetic
+2024-03-22,I008,Sandwich,13,8.9,5.2,13.8,6.1,Light Rain/Snow,synthetic
+2024-03-23,I008,Sandwich,28,12.3,8.7,16.3,0.0,Cloudy,synthetic
+2024-03-24,I008,Sandwich,17,6.9,3.7,10.8,0.0,Cloudy,synthetic
+2024-03-25,I008,Sandwich,20,6.3,1.7,9.3,8.2,Heavy Rain/Snow,synthetic
+2024-03-26,I008,Sandwich,17,7.4,3.4,10.9,0.0,Clear,synthetic
+2024-03-27,I008,Sandwich,17,11.6,8.9,15.4,0.0,Clear,synthetic
+2024-03-28,I008,Sandwich,13,10.2,7.0,13.0,2.4,Light Rain/Snow,synthetic
+2024-03-29,I008,Sandwich,15,8.0,3.5,11.2,0.0,Clear,synthetic
+2024-03-30,I008,Sandwich,20,11.2,8.4,15.5,0.0,Clear,synthetic
+2024-03-31,I008,Sandwich,17,10.2,5.2,14.9,6.5,Light Rain/Snow,synthetic
 2024-04-01,I008,Sandwich,18,12.9,8.9,18.4,0.6,Clear,synthetic
 2024-04-02,I008,Sandwich,18,8.4,4.5,13.7,0.0,Cloudy,synthetic
 2024-04-03,I008,Sandwich,15,9.7,5.4,14.1,0.0,Cloudy,synthetic
